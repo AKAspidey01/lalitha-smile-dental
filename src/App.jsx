@@ -6,20 +6,23 @@ import Footer from './Shared/Footer/Footer'
 import Home from './components/Home/Home'
 import ServicesList from './components/ServicesList/ServicesList'
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { LenisProvider } from './utils/LenisProvider'
 
 
 
 function App() {
 
   return (
-    <Router>
-      <Header/>
-      <Routes>
-        <Route path='/' Component={Home} exact={true}/>
-        <Route path='/services' Component={ServicesList} exact={true}/>
-      </Routes>
-      <Footer/>
-    </Router>
+    <LenisProvider>
+      <Router>
+        <Header/>
+        <Routes>
+          <Route path='/' Component={Home} exact={true}/>
+          <Route path='/services' Component={ServicesList} exact={true}/>
+        </Routes>
+        <Footer/>
+      </Router>
+    </LenisProvider>
   )
 }
 
