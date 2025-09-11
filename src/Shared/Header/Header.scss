@@ -1,0 +1,33 @@
+.main-header-section {
+    .inner-header-section {
+        padding: 15px 0px;
+    }
+    .header-grid-section {
+        .left-header-logo {
+            height: 80px;
+            width: fit-content;
+        }
+        .header-navigation-menu {
+            li {
+                a {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #1f1f1f
+                }
+            }
+        }
+        .get-appointment-btn {
+            button {
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                padding: 10px 25px;
+                border-radius: 30px;
+
+                &:hover {
+                    background: #9b4522;
+                }
+            }
+        }
+    }
+}

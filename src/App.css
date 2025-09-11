@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #A5BC6C;
+  --color-secondary: #9B4522;
+  --color-Black: #313131;
+  --color-borderColor: #CDCDCD;
+  --color-inputBg: #F6F6F6;
+  --font-plusjakarta: "Plus Jakarta Sans", sans-serif;
+}
+
+iframe:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+button , a {
+  font-family:  "DM Sans", sans-serif;
+  transition-duration: 0.3s;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+a {
+  display: inline-block;
+}
+h1, h2 ,h3, h4 ,h5 ,h6 {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+input, textarea ,  p {
+  font-family: "Manrope", sans-serif;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1380px !important;
+  margin: 0px auto;
+  padding: 0px 30px;
+}

@@ -1,0 +1,168 @@
+.main-footer-section {
+    .news-letter-content-input-sec {
+        background: #A5BC6C;
+        padding: 40px;
+        border-radius: 30px;
+        position: relative;
+        margin-bottom: -140px;
+
+        .inner-news-letter-content-input-sec {
+            width: 50%;
+            margin: 0px auto;
+            .news-letter-head {
+                h2 {
+                    font-size: 40px;
+                    font-style: italic;
+                    color: #fff;
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            }
+
+            .email-input-section-news {
+                overflow: hidden;
+                border-radius: 12px;
+                margin-top: 30px;
+                input {
+                    background: #fff;
+                    width: 100%;
+                    height: 60px;
+                    padding: 0px 20px;
+                    font-size: 18px;
+                    font-weight: 600 ;
+                }
+                button {
+                    position: absolute;
+                    right: 5px;
+                    top: 50%;
+                    height: calc(100% - 10px);
+                    padding: 0px 20px;
+                    border-radius: 10px;
+                    background: #9B4522;
+                    color: #fff;
+                    transform: translate(-0% , -50%);
+                    transition-duration: 0.3s;
+                    font-weight: 600;
+                    font-size: 18px;
+                    
+                    &:hover {
+                        background: #A5BC6C;
+                    }
+                }
+            }
+        }
+
+        &::after {
+            content: '';
+            top: 15px;
+            right: 15px;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            background: url('../../assets/images/newsletter-pattern-image.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &::before {
+            content: '';
+            bottom: 15px;
+            left: 15px;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            background: url('../../assets/images/newsletter-pattern-image.svg');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+    .main-footer-navigation-outer {
+        background: url("../../assets/images/footer-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 200px 0px 60px 0px;
+
+        .main-footer-grid {            
+            .footer-logo {
+                height: 120px;
+                width: fit-content;
+                margin-bottom: 20px;
+
+                img {
+                    object-position: left;
+                }
+            }
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                color: #fff;
+                width: 80%;
+            }
+            .social-media-sec {
+                margin-top: 30px;
+                .single-social-media-icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .footer-menu-grid-sec {
+                gap: 35px 30px;
+            }
+
+            .single-footer-nav-menu {
+                h4 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                }
+
+                .single-links-nav {
+                    margin-top: 25px;
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px 0px;
+
+                        li {
+                            a {
+                                font-size: 16px;
+                                color: #fff;
+                                
+                                
+                                &:hover {
+                                    color: #A5BC6C;
+                                }
+                            }
+                            a.mobile-number {
+                                display: flex !important;
+                                gap: 10px !important;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-copyright-section {
+        padding: 20px 0px;
+        background: #000;
+
+        p {
+            font-size: 16px;
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+}
