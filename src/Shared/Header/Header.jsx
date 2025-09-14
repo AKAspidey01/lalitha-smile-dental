@@ -77,10 +77,10 @@ const Header = () => {
                     <nav>
                         <ul className='flex flex-col gap-y-4 header-navigation-menu'>
                             <li onClick={() => setMobileMenu(false)}><NavLink to={'/'}>Home</NavLink></li>
-                            <li onClick={() => setMobileMenu(false)}><NavLink to={'/menu'}>About Us</NavLink></li>
-                            <li onClick={() => setMobileMenu(false)}><NavLink to={'/event-space'}>Services</NavLink></li>
-                            <li onClick={() => setMobileMenu(false)}><a href="#">Blog</a></li>
-                            <li onClick={() => setMobileMenu(false)}><NavLink to={'/our-vision'}>Contact Us</NavLink></li>
+                            <li onClick={() => setMobileMenu(false)}><NavLink to={'/about'}>About Us</NavLink></li>
+                            <li onClick={() => setMobileMenu(false)}><NavLink to={'/services'}>Services</NavLink></li>
+                            <li onClick={() => setMobileMenu(false)}><NavLink to={'/blog'}>Blog</NavLink></li>
+                            <li onClick={() => setMobileMenu(false)}><NavLink to={'/contact'}>Contact Us</NavLink></li>
                         </ul>
                     </nav>
                 </div>
