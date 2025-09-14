@@ -67,7 +67,7 @@ const Home = () => {
                     <div className="inner-home-sec-1-content">
                         <h1>Creating Beautiful Smiles <br /> with Personal Touch</h1>
                         <p>Our dedicated team of professionals is committed to delivering <br /> personalized, high-quality dental care a comfortable & friendly.</p>
-                        <div className="banner-buttons-section flex items-center gap-x-7">
+                        <div className="banner-buttons-section flex items-center gap-x-7 flex-wrap gap-y-6">
                             <button type="button" className='appointment-btn bg-primary'>Get Appointment</button>
                             <button type="button" className='number-btn bg-white flex items-center gap-x-3'><i class="bi bi-telephone-fill"></i> (123) 456-7890</button>
                         </div>
@@ -93,7 +93,7 @@ const Home = () => {
                                         <p>Dr. Achyuta exudes an enthusiasm for enhancing smiles, from cosmetic to oral health needs, she believes in the vital role dentistry plays in one’s life. "I passionately strive to provide the best care for all of my patients because I understand the great significance of taking preventative measures to achieve optimal results." Dr. Achyuta enjoys creating happy, healthy, and confident smiles!</p>
                                         <p>She received her BDS degree in India and her Doctor of Dental Surgery degree from Dental Board of California in 2004. Dr. Achyuta and her talented team of experts have a compassionate and meticulous standard of care, focusing on creating a comfortable and enjoyable environment. To that end, their goal is to foster a long-term, conscientious, and supportive relationship with patients.</p>
                                     </div>
-                                    <div className="signature-knowmore-section flex items-end justify-between">
+                                    <div className="signature-knowmore-section flex items-end justify-between flex-wrap gap-y-6">
                                         <div className="left-signature">
                                             <p>Achyuta</p>
                                             <p className='dr-name text-Black'>DR. ACHYUTA</p>
@@ -195,7 +195,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </section>c
+        </section>
         <section className="home-section-7">
             <div className="inner-home-section-7">
                 <div className="container">
@@ -206,7 +206,7 @@ const Home = () => {
                         <div className="map-contact-section col-span-6 similar-home-sec-7-cols">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.204548001121!2d-122.66597759999999!3d38.274750999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085b4e4b5955555%3A0xb36d58bbd2a82cd!2s1372%20N%20McDowell%20Blvd%20B1%2C%20Petaluma%2C%20CA%2094954%2C%20USA!5e0!3m2!1sen!2sin!4v1757563105947!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div className="contact-form-section col-span-6 p-7">
+                        <div className="contact-form-section col-span-6 p-7 similar-home-sec-7-cols">
                             <Formik
                                 validationSchema={contactFormValidation}
                                 initialValues={contactFormValues}

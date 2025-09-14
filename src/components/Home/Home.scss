@@ -48,7 +48,6 @@
   .signature-knowmore-section {
     margin-top: 40px;
 
-
     p {
       font-family: "Miss Fajardose", cursive !important;
       font-size: 40px;
@@ -109,20 +108,19 @@
 }
 
 .right-know-more-sec {
-    button {
-      color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      padding: 8px 30px;
-      border-radius: 30px;
+  button {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 30px;
+    border-radius: 30px;
 
-      &:hover {
-        background: #9b4522;
-      }
+    &:hover {
+      background: #9b4522;
     }
   }
+}
 .block-content-section {
-  
   h2 {
     font-size: 45px;
     color: #1f1f1f;
@@ -299,109 +297,107 @@
     transform: rotate(0deg);
   }
 
-   .right-button.activer-plus {
-    transform: rotate(180deg) ;
+  .right-button.activer-plus {
+    transform: rotate(180deg);
   }
 }
 
-
 .home-section-7 {
-    padding: 100px 0px;
-    background: url("../../assets/images/contact-gray-bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    .home-section-7-grid {
-      margin-top: 40px;
+  padding: 100px 0px;
+  background: url("../../assets/images/contact-gray-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-        .contact-form-section {
-            .form-inputsec {
-                input , textarea{
-                    background: #F6F6F6;
-                    padding: 12px 25px;
-                    border-radius: 10px;
-                    font-size: 16px;
-                    color: #101010;
-                    font-weight: 500;
-                    width: 100%;
-                }
-                textarea {
-                    border: none;
-                    resize: none;
-                    height: 120px;
-                }
-            }
-            .bottom-form-submitter {
-                button {
-                    padding: 6px 34px 6px 14px;
-                    border-radius: 50px;
-                    color: #fff;
-                    font-weight: 600;
-                    font-size: 18px;
-                    transition-duration: 0.3s;
-                    width: 100%;
-                    text-align: left;
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                    justify-content: center;
-                    
-                    &:hover {
-                        background: #9B4522;
-                    }
-                    i {
-                        color: #fff;
-                        font-size: 18px;
-                        transition-duration: 0.3s;
-                    }
-                }
-            }
-        }
-    }
+  .home-section-7-grid {
+    margin-top: 40px;
 
-    .address-number-timings-grid{
-      
-      margin-top: 30px;
-      .similar-sec-7-timings-cols {
-        background: #fff;
-        border-radius: 25px;
-        padding: 20px;
-
-        h5 {
-          font-size: 20px;
+    .contact-form-section {
+      .form-inputsec {
+        input,
+        textarea {
+          background: #f6f6f6;
+          padding: 12px 25px;
+          border-radius: 10px;
+          font-size: 16px;
+          color: #101010;
           font-weight: 500;
-          font-family: "Plus Jakarta Sans", sans-serif !important;
+          width: 100%;
         }
-
-        p {
-          font-size: 18px;
-          font-weight: 400;
-          color: #1f1f1f;
-          font-family: "Plus Jakarta Sans", sans-serif !important;
-        }
-        a {
-          font-size: 24px;
-          font-weight: 400;
+        textarea {
+          border: none;
+          resize: none;
+          height: 120px;
         }
       }
-      .top-icon-label-sec {
-        margin-bottom: 20px;
-
-        .left-sec-7-icon {
-          width: 40px ;
-          height: 40px;
-        }
-        h4 {
-          font-size: 22px;
+      .bottom-form-submitter {
+        button {
+          padding: 6px 34px 6px 14px;
+          border-radius: 50px;
+          color: #fff;
           font-weight: 600;
-          color: #1f1f1f;
-          letter-spacing: -3%;
+          font-size: 18px;
+          transition-duration: 0.3s;
+          width: 100%;
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          justify-content: center;
+
+          &:hover {
+            background: #9b4522;
+          }
+          i {
+            color: #fff;
+            font-size: 18px;
+            transition-duration: 0.3s;
+          }
         }
       }
     }
-}
+  }
 
+  .address-number-timings-grid {
+    margin-top: 30px;
+    .similar-sec-7-timings-cols {
+      background: #fff;
+      border-radius: 25px;
+      padding: 20px;
+
+      h5 {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Plus Jakarta Sans", sans-serif !important;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #1f1f1f;
+        font-family: "Plus Jakarta Sans", sans-serif !important;
+      }
+      a {
+        font-size: 24px;
+        font-weight: 400;
+      }
+    }
+    .top-icon-label-sec {
+      margin-bottom: 20px;
+
+      .left-sec-7-icon {
+        width: 40px;
+        height: 40px;
+      }
+      h4 {
+        font-size: 22px;
+        font-weight: 600;
+        color: #1f1f1f;
+        letter-spacing: -3%;
+      }
+    }
+  }
+}
 
 .home-section-8 {
   padding: 100px 0px;
@@ -412,11 +408,11 @@
 
   .home-section-8-grid {
     margin-top: 40px;
-    
+
     .single-pricing-card-section {
       .top-pricing-price-sec {
         padding: 30px;
-        border-bottom: 1px solid #CFCFCF;
+        border-bottom: 1px solid #cfcfcf;
 
         h4 {
           font-size: 22px;
@@ -425,18 +421,17 @@
         }
         h2 {
           font-size: 50px;
-          color: #9B4522;
+          color: #9b4522;
           transition-duration: 0.3s;
           font-weight: 700;
           span {
-            font-size: 20px ;
+            font-size: 20px;
             font-weight: 400;
           }
-
         }
         p {
-            color: #878787;
-            font-size: 16px;
+          color: #878787;
+          font-size: 16px;
         }
         .right-know-more-sec {
           margin-top: 20px;
@@ -480,15 +475,293 @@
 
 .home-section-9 {
   padding: 100px 0px;
-  
+
   .home-section-9-gallery {
     margin-top: 40px;
-    
+
     .single-gallery-image-section {
       max-height: 280px;
       overflow: hidden;
     }
   }
+}
 
-  
+@media only screen and (max-width: 991.99px) {
+  .home-section-1 {
+    padding: 110px 0px 110px 0px;
+    .inner-home-sec-1-content {
+      h1 {
+        font-size: 50px;
+        line-height: 64px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 32px;
+      }
+
+      .banner-buttons-section {
+        margin-top: 40px;
+        button {
+          padding: 8px 24px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .top-block-tag {
+    margin-bottom: 10px;
+
+    p {
+      padding: 4px 20px;
+      font-size: 14px;
+    }
+  }
+  .home-section-2 {
+    padding: 60px 0px;
+
+    .home-section-2-grid {
+      gap: 40px 0px;
+      .similar-home-sec-2-cols {
+        grid-column: span 12 / span 12;
+      }
+      .home-sec-2-left-col {
+        height: 600px;
+        
+        img {
+          object-fit: cover;
+          object-position: top;
+        }
+      }
+    }
+
+    .signature-knowmore-section {
+      margin-top: 40px;
+
+      p {
+        font-family: "Miss Fajardose", cursive !important;
+        font-size: 40px;
+        font-weight: normal;
+      }
+      p.role-sec {
+        font-family: "Manrope", sans-serif !important;
+        font-size: 14px;
+        font-weight: 500;
+        color: #656565;
+      }
+      p.dr-name {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Manrope", sans-serif !important;
+      }
+    }
+  }
+  .home-section-4 {
+    .home-section-4-grid {
+      gap: 30px 0px;
+      .similar-home-sec-4-cols {
+        grid-column: span 12 / span 12;
+      }
+      .left-home-sec-4 {
+        height: 300px;
+
+        img {
+          object-fit: cover;
+          object-position: top;
+
+        }
+      }
+    }
+  }
+
+  .home-section-5 {
+    .home-section-5-grid {
+      .single-service-section  {
+        grid-column: span 6 / span 6;
+      }
+    }
+  }
+
+  .home-section-7 {
+    .home-section-7-grid  {
+      gap: 24px;
+      .similar-home-sec-7-cols {
+        grid-column: span 12 / span 12;
+      }
+      .map-contact-section  {
+        iframe {
+          height: 300px !important;
+        }
+      }
+    }
+    .address-number-timings-grid {
+      .similar-sec-7-timings-cols {
+        grid-column: span 6 / span 6;
+      }
+    }
+  }
+
+  .block-content-section {
+    h2 {
+      font-size: 35px;
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 674.99px) {
+  // .home-section-2 .signature-knowmore-section p {
+  //   font-family: "Miss Fajardose", cursive !important;
+  //   font-size: 30px;
+  //   font-weight: normal;
+  // }
+
+ .home-section-1 {
+    .inner-home-sec-1-content {
+      h1 {
+        font-size: 35px;
+        line-height: 50px;
+        br {
+          display: none;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 30px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .home-section-2 {
+    .signature-knowmore-section {
+      p.role-sec {
+        font-size: 12px;
+      }
+      p.dr-name {
+        font-size: 16px;
+      }
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .block-content-section {
+    h2 {
+      font-size: 30px;
+    }
+    .block-cotent-para-sec {
+    margin-top: 8px !important;
+  }
+  }
+  .right-know-more-sec {
+    button {
+      padding: 6px 20px;
+    }
+  }
+  .slider-buttons {
+    button {
+    width: 40px;
+    height: 40px;
+     i {
+    font-size: 20px;
+  }
+  }
+
+
+ 
+  }
+    .heading-slider-buttons-sec  {
+    flex-wrap: wrap;
+    gap: 20px 0px;
+  }
+    .about-accordion-header {
+    .right-button {
+      width: 16px !important;
+      height: 16px !important;
+    }
+
+  }
+
+   .home-section-7 {
+    .home-section-7-grid  {
+      gap: 24px;
+      .bottom-form-submitter   {
+        grid-column: span 8 / span 8;
+      }
+      .similar-home-sec-7-cols {
+        grid-column: span 12 / span 12;
+      }
+      .map-contact-section  {
+        iframe {
+          height: 300px !important;
+        }
+      }
+    }
+    .address-number-timings-grid {
+      .similar-sec-7-timings-cols {
+        grid-column: span 12 / span 12;
+      }
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 474.99px) {
+  .home-section-5 {
+    .home-section-5-grid {
+      .single-service-section  {
+        grid-column: span 12 / span 12;
+      }
+    }
+  }
+
+  .home-section-4 {
+    .testimonial-content-sec {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+  .home-section-3 , .home-section-4 , .home-section-5 , .home-section-6, .home-section-7 , .home-section-8 , .home-section-9{
+    padding: 50px 0px;
+  }
+
+  .home-section-6 {
+    .about-accordion-header {
+      h2 {
+        font-size: 18px;
+      }
+    }
+  }
+  .home-section-7 {
+    .address-number-timings-grid {
+      .top-icon-label-sec {
+        .left-sec-7-icon {
+          width: 30px ;
+          height: 30px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+      }
+      .similar-sec-7-timings-cols {
+        a {
+          font-size: 20px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }

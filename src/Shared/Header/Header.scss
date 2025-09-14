@@ -1,6 +1,40 @@
 .main-header-section {
+    overflow: hidden;
     .inner-header-section {
         padding: 15px 0px;
+
+        .abs-services-mega-menu-sec {
+            position: absolute;
+            width: 100%;
+            padding: 15px;
+            background: #F6F6F6 ;
+            border-radius: 16px;
+            gap: 15px;
+            transform: translateY(100px);
+            visibility: hidden;
+            opacity: 0;
+            transition-duration: 0.3s;
+
+            a {
+                padding: 8px 12px;
+                background: #fff;
+                border-radius: 10px;
+
+                p {
+                    font-weight: 500;
+                }
+            }
+
+            a.active {
+
+            }
+        }
+
+        .abs-services-mega-menu-sec.active {
+            visibility: visible;
+            opacity: 100%;
+            transform: translateY(40px);
+        }
     }
     .header-grid-section {
         .left-header-logo {
@@ -13,6 +47,18 @@
                     font-size: 16px;
                     font-weight: 500;
                     color: #1f1f1f
+                }
+            }
+
+            .parent-menu-sec {
+                position: relative;
+
+                i {
+                    transition-duration: 0.3s;
+                }
+
+                &:hover i {
+                    transform: rotate(180deg);
                 }
             }
         }
@@ -28,6 +74,81 @@
                     background: #9b4522;
                 }
             }
+        }
+    }
+
+    .mobile-header-overlay , .mobile-header-menu , .mobile-menu-button {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 991.99px) {
+    .main-header-section {
+        .desktop-menu-section , .get-appointment-btn{
+            display: none;
+        }
+        .mobile-header-overlay , .mobile-header-menu , .mobile-menu-button {
+            display: block !important;
+        }
+        .mobile-header-overlay {
+            position: fixed;
+            background: #00000067;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            visibility: hidden;
+            opacity: 0;
+            transition-duration: 0.5s;
+        }
+        .mobile-header-menu {
+            position: fixed;
+            background: #fff;
+            width: 300px;
+            height: 100%;
+            right: -100%;
+            top: 0;
+            z-index: 999;
+            transition-duration: 0.5s;
+            
+            .top-back-icon-mobile {
+                button {
+                    padding: 10px 20px;
+                }
+            }
+
+            a {
+                width: 100% !important;
+                padding: 10px 20px !important;
+                transition-duration: 0.3s;
+
+                &:hover {
+                    background: #00000029;
+                }
+            }
+            a.active {
+                background: #A5BC6C !important;
+                color: #fff !important;
+            }
+        }
+        .mobile-header-menu.active {
+            right: 0;
+        }
+
+        .mobile-header-overlay.active {
+            visibility: visible;
+            opacity: 100%;
+        }
+        .header-grid-section {
+            .left-header-logo {
+                height: 60px;
+            }
+        }
+        .abs-services-mega-menu-sec {
+            display: none;
         }
     }
 }
