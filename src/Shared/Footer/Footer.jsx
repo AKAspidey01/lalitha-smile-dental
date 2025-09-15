@@ -2,13 +2,17 @@ import React from 'react';
 import './Footer.scss';
 import FooterLogo from '../../assets/images/footer-logo.svg';
 import homePageData from '../../components/Home/HomePageData';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 
 
 const Footer = () => {
+
+  const location = useLocation();
+
+
   return (
-    <div className="main-footer-section">
+    <div className={`main-footer-section ${location.pathname == '/services' || location.pathname == '/contact' ? 'service-footer' : ''}`}>
       <div className="inner-main-footer-section">
         <div className="top-newsletter-section">
           <div className="container">

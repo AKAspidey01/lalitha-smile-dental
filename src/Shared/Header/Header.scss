@@ -1,19 +1,21 @@
 .main-header-section {
-    overflow: hidden;
+    // overflow: hidden;
+    // overflow-y: auto !important;
     .inner-header-section {
         padding: 15px 0px;
 
         .abs-services-mega-menu-sec {
             position: absolute;
-            width: 100%;
+            width: 90%;
             padding: 15px;
             background: #F6F6F6 ;
             border-radius: 16px;
             gap: 15px;
-            transform: translateY(100px);
+            transform: translate(-50% , 40%);
             visibility: hidden;
             opacity: 0;
             transition-duration: 0.3s;
+            left: 50%;
 
             a {
                 padding: 8px 12px;
@@ -33,13 +35,21 @@
         .abs-services-mega-menu-sec.active {
             visibility: visible;
             opacity: 100%;
-            transform: translateY(40px);
+             transform: translate(-50% , 20%);
+            // transform: translateY(40px);
         }
     }
     .header-grid-section {
         .left-header-logo {
             height: 80px;
             width: fit-content;
+        }
+        .desktop-menu-section {
+            li { 
+                a.active {
+                    color: #9b4522 !important;
+                }
+            }
         }
         .header-navigation-menu {
             li {

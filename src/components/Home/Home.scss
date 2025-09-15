@@ -717,6 +717,35 @@
 
 
 @media only screen and (max-width: 474.99px) {
+
+   .home-section-2 {
+    .home-section-2-grid {
+      .home-sec-2-left-col {
+        height: 400px;
+      }
+    }
+
+    .signature-knowmore-section {
+      margin-top: 40px;
+
+      p {
+        font-family: "Miss Fajardose", cursive !important;
+        font-size: 40px;
+        font-weight: normal;
+      }
+      p.role-sec {
+        font-family: "Manrope", sans-serif !important;
+        font-size: 14px;
+        font-weight: 500;
+        color: #656565;
+      }
+      p.dr-name {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Manrope", sans-serif !important;
+      }
+    }
+  }
   .home-section-5 {
     .home-section-5-grid {
       .single-service-section  {
@@ -744,6 +773,15 @@
     }
   }
   .home-section-7 {
+    .contact-form-section  {
+      padding: 5px 20px 20px 20px;
+      .contact-form-inputs-grid {
+      .col-span-6 {
+        grid-column: span 12 / span 12 !important;
+      }
+    }
+    }
+    
     .address-number-timings-grid {
       .top-icon-label-sec {
         .left-sec-7-icon {

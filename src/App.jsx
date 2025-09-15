@@ -7,6 +7,8 @@ import Home from './components/Home/Home'
 import ServicesList from './components/ServicesList/ServicesList'
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { LenisProvider } from './utils/LenisProvider'
+import AboutUs from './components/AboutUs/AboutUs'
+import ContactUs from './components/ContactUs/ContactUs'
 
 
 
@@ -18,7 +20,9 @@ function App() {
         <Header/>
         <Routes>
           <Route path='/' Component={Home} exact={true}/>
+          <Route path='/about' Component={AboutUs} exact={true}/>
           <Route path='/services' Component={ServicesList} exact={true}/>
+          <Route path='/contact' Component={ContactUs} exact={true}/>
         </Routes>
         <Footer/>
       </Router>

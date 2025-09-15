@@ -1,0 +1,44 @@
+.main-services-section {
+            background: #F6F6F6;
+    .services-section-1 {
+
+        padding: 100px 0px;
+
+        .right-search-services-section {
+            input {
+                padding: 10px 25px;
+                border-radius: 10px;
+            }
+        }
+
+        .services-list-grid-section {
+            margin-top: 40px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 991.99px) {
+    .main-services-section {
+        .services-list-grid-section {
+            .single-service-section {
+                grid-column: span 6 / span 6;       
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 574.99px) {
+    .main-services-section {
+        .services-section-1 {
+            padding: 60px 0px;
+        }
+        .services-list-grid-section {
+            .single-service-section {
+                grid-column: span 12 / span 12;       
+            }
+        }
+    }
+}

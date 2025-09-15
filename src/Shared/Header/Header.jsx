@@ -36,20 +36,20 @@ const Header = () => {
               <nav>
                 <ul className='flex items-center gap-x-12'>
                   <li>
-                    <NavLink>About Us</NavLink>
+                    <NavLink to={'/about'}>About Us</NavLink>
                   </li>
                   <li>
-                    <NavLink>
+                    <NavLink to={'/services'}>
                       <div className="parent-menu-sec relative" onMouseEnter={() => setMegaMenu(true)}>
                         <button className='flex items-center gap-x-3'> Services <i class="bi bi-chevron-down"></i></button>
                       </div>
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink>Blog</NavLink>
+                    <NavLink to={'/blog'}>Blog</NavLink>
                   </li>
                   <li>
-                    <NavLink>Contact</NavLink>
+                    <NavLink to={'/contact'}>Contact</NavLink>
                   </li>
                 </ul>
               </nav>
@@ -89,7 +89,7 @@ const Header = () => {
 
             </button>
           </div>
-          <div className={`abs-services-mega-menu-sec grid grid-cols-12 ${megaMenu == true && 'active'}`} onMouseEnter={() => setMegaMenu(true)} onMouseLeave={() => setMegaMenu(false)}>
+          <div className={`abs-services-mega-menu-sec grid grid-cols-12 ${megaMenu == true ? 'active': ''}`} onMouseEnter={() => setMegaMenu(true)} onMouseLeave={() => setMegaMenu(false)}>
             {homePageData.ServicesData.map((item , index) => {
               return (
               <NavLink className={'col-span-3'} key={index}>
