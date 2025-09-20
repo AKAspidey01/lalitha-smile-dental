@@ -146,7 +146,7 @@ const ContactUs = () => {
                                 <div className="flex flex-col justify-between h-full">
                                     <div className="top-icon-label-sec flex items-center gap-x-4">
                                         <div className="left-sec-7-icon"><img src={TimingIcon} alt="" /></div>
-                                        <h4>Clinic Timings</h4>
+                                        <h4>Office Hours</h4>
                                     </div>
                                     <div>
                                         <p>Monday - Friday : </p>
