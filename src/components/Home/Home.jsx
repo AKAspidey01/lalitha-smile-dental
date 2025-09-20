@@ -66,7 +66,7 @@ const Home = () => {
                 <div className="container">
                     <div className="inner-home-sec-1-content">
                         <h1>Creating Beautiful Smiles <br /> with Personal Touch</h1>
-                        <p>Our dedicated team of professionals is committed to delivering <br /> personalized, high-quality dental care a comfortable & friendly.</p>
+                        <p>Our dedicated team of professionals is committed to delivering <br /> personalized, high-quality dental care in a comfortable and friendly environment.</p>
                         <div className="banner-buttons-section flex items-center gap-x-7 flex-wrap gap-y-6">
                             <button type="button" className='appointment-btn bg-primary'>Get Appointment</button>
                             <button type="button" className='number-btn bg-white flex items-center gap-x-3'><i class="bi bi-telephone-fill"></i> (123) 456-7890</button>
@@ -295,7 +295,7 @@ const Home = () => {
                             <div className="flex flex-col justify-between h-full">
                                 <div className="top-icon-label-sec flex items-center gap-x-4">
                                     <div className="left-sec-7-icon"><img src={TimingIcon} alt="" /></div>
-                                    <h4>Clinic Timings</h4>
+                                    <h4>Office Hours</h4>
                                 </div>
                                 <div>
                                     <p>Monday - Friday : </p>
