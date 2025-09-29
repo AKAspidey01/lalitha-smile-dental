@@ -12,7 +12,7 @@ const Footer = () => {
 
 
   return (
-    <div className={`main-footer-section ${location.pathname == '/services' || location.pathname == '/contact' ? 'service-footer' : ''}`}>
+    <div className={`main-footer-section ${location.pathname == '/services' || location.pathname == '/contact' || location.pathname == '/blog' ? 'service-footer' : ''}`}>
       <div className="inner-main-footer-section">
         <div className="top-newsletter-section">
           <div className="container">
@@ -55,18 +55,11 @@ const Footer = () => {
                           <div className="single-links-nav">
                             <nav>
                               <ul>
-                                <li>
-                                  <NavLink>About Us</NavLink>
-                                </li>
-                                <li>
-                                  <NavLink>Services</NavLink>
-                                </li>
-                                <li>
-                                  <NavLink>Blogs</NavLink>
-                                </li>
-                                <li>
-                                  <NavLink>Contact Us</NavLink>
-                                </li>
+                                <li><NavLink to={'/'}>Home</NavLink></li>
+                                <li><NavLink to={'/about'}>About Us</NavLink></li>
+                                <li><NavLink to={'/services'}>Services</NavLink></li>
+                                <li><NavLink to={'/blog'}>Blog</NavLink></li>
+                                <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
                               </ul>
                             </nav>
                           </div>

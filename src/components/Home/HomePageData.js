@@ -40,38 +40,173 @@ import Linked from '../../assets/images/linked-in.svg'
 const ServicesData = [
     {
         title: 'Routine Dental Checkups',
-        description: 'Regular visits help detect issues early, maintain oral health, and keep your smile strong for years to come.',
+        description: 'Regular exams help detect dental issues early, keeping your teeth and gums healthy.',
         img: RoutineDental
     },
     {
         title: 'Professional Teeth Cleaning',
-        description: 'Thorough cleanings remove plaque, tartar, and stains, leaving your teeth fresh, polished, and healthier.',
+        description: 'Thorough cleanings remove plaque, tartar, and stains, leaving your smile fresh and polished.',
         img: TeethCleaning
     },
     {
         title: 'Digital X-Rays & Imaging',
-        description: 'Safe, precise imaging provides a clear view of your teeth and gums for accurate diagnosis and treatment planning.',
+        description: 'Advanced digital imaging provides safe, accurate, and detailed views of your oral health.',
         img: DentalXRay
     },
     {
+        title: 'Oral Cancer Screening',
+        description: 'Early detection screenings help identify warning signs of oral cancer for timely care.',
+        img: Flouride
+    },
+    {
         title: 'Fluoride Treatment',
-        description: 'A quick and effective way to strengthen enamel, prevent decay, and protect teeth against cavities.',
+        description: 'Fluoride strengthens enamel and helps prevent cavities in both children and adults.',
         img: Flouride
     },
     {
         title: 'Sealants for Cavity Prevention',
-        description: 'Protective coatings applied to back teeth help block bacteria and food particles, reducing cavity risk.',
+        description: 'Protective coatings on molars shield teeth from decay and cavities',
         img: SealantsTeeth
     },
     {
         title: 'Tooth-Colored Fillings',
-        description: 'Natural-looking restorations blend seamlessly with your smile while repairing damage from cavities.',
+        description: 'Natural-looking fillings restore decayed teeth while blending seamlessly with your smile',
         img: ToothFillings
     },
     {
         title: 'Dental Crowns & Bridges',
-        description: 'Custom crowns and bridges restore function, beauty, and confidence by replacing or protecting damaged teeth.',
-        img: DentalCrowns
+        description: 'Custom crowns and bridges repair damaged teeth and replace missing ones with strength and beauty.',
+        img: ToothFillings
+    },
+    {
+        title: 'Inlays & Onlays',
+        description: 'Durable restorations repair moderate damage while preserving your natural tooth structure.',
+        img: ToothFillings
+    },
+    {
+        title: 'Dentures (Full & Partial)',
+        description: 'Comfortable, custom-made dentures restore function and confidence to your smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Dental Implants (Placement & Restoration)',
+        description: 'Implants replace missing teeth with secure, long-lasting, and natural-looking solutions.',
+        img: ToothFillings
+    },
+    {
+        title: 'Root Canal Therapy',
+        description: 'Gentle treatment saves infected teeth and relieves pain while preserving your smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Teeth Whitening',
+        description: 'Professional whitening brightens your teeth safely for a radiant, confident smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Porcelain Veneers',
+        description: 'Thin, custom veneers correct chips, stains, and gaps for a flawless appearance.',
+        img: ToothFillings
+    },
+    {
+        title: 'Cosmetic Bonding',
+        description: 'Bonding quickly repairs chips, cracks, and discoloration for a natural-looking smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Smile Makeovers',
+        description: 'Personalized treatments combine cosmetic and restorative care to transform your smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Traditional Braces',
+        description: 'Metal braces straighten teeth effectively, improving bite and long-term oral health.',
+        img: ToothFillings
+    },
+    {
+        title: 'Invisalign®',
+        description: 'Discreet aligners gradually straighten teeth without wires or brackets.',
+        img: ToothFillings
+    },
+    {
+        title: 'Retainers',
+        description: 'Custom retainers maintain your orthodontic results and keep your smile in place.',
+        img: ToothFillings
+    },
+    {
+        title: 'Tooth Extractions',
+        description: 'Safe, comfortable extractions remove damaged or problematic teeth when necessary.',
+        img: ToothFillings
+    },
+    {
+        title: 'Wisdom Teeth Removal',
+        description: 'Gentle removal prevents pain, crowding, and future oral health problems.',
+        img: ToothFillings
+    },
+    {
+        title: 'Bone Grafting',
+        description: 'Bone grafts restore jaw strength and support for dental implants.',
+        img: ToothFillings
+    },
+    {
+        title: 'Dental Implant Surgery',
+        description: 'Precise implant surgery replaces missing teeth with lasting, secure results.',
+        img: ToothFillings
+    },
+    {
+        title: 'Deep Cleaning',
+        description: 'Thorough gum therapy removes plaque below the gumline to treat and prevent disease.',
+        img: ToothFillings
+    },
+    {
+        title: 'Gum Disease Treatment & Maintenance',
+        description: 'Targeted treatments restore gum health and prevent future periodontal issues.',
+        img: ToothFillings
+    },
+    {
+        title: 'Laser Gum Therapy',
+        description: 'Minimally invasive laser treatment gently heals and reshapes diseased gum tissue.',
+        img: ToothFillings
+    },
+    {
+        title: 'Infant & Child Dental Exams',
+        description: 'Gentle exams monitor growth and help children develop healthy dental habits early.',
+        img: ToothFillings
+    },
+    {
+        title: 'Preventive Sealants & Fluoride',
+        description: 'Sealants and fluoride provide extra protection against childhood cavities.',
+        img: ToothFillings
+    },
+    {
+        title: 'Early Orthodontic Evaluation',
+        description: 'Timely assessments guide jaw and teeth development for a healthy smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Cavity Fillings for Children',
+        description: 'Kid-friendly fillings repair cavities with safe, natural-looking materials.',
+        img: ToothFillings
+    },
+    {
+        title: 'Same-Day Emergency Visits',
+        description: 'Quick emergency care provides relief and solutions when you need them most.',
+        img: ToothFillings
+    },
+    {
+        title: 'Toothache Relief',
+        description: 'Gentle treatments address the cause of pain and restore comfort quickly.',
+        img: ToothFillings
+    },
+    {
+        title: 'Broken Tooth Repair',
+        description: 'Urgent repair helps save or restore damaged teeth after accidents.',
+        img: ToothFillings
+    },
+    {
+        title: 'Emergency Extractions',
+        description: 'Immediate extractions relieve severe pain and prevent further complications.',
+        img: ToothFillings
     },
 ]
 

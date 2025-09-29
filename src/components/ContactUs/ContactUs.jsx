@@ -38,7 +38,7 @@ const ContactUs = () => {
             <section className="main-breadcrumb-similar">
                 <div className="inner-breadcrumb-similar">
                     <div className="container">
-                        <h2>Contact Us</h2>
+                        <h2>CONTACT US</h2>
                         <ul className='flex items-center justify-center gap-x-4'>
                             <li><NavLink to={'/'}>Lalitha Smile Dental</NavLink></li>
                             <li><i class="bi bi-chevron-right text-white"></i></li>

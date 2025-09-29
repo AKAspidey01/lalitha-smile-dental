@@ -11,11 +11,16 @@
             background: #F6F6F6 ;
             border-radius: 16px;
             gap: 15px;
-            transform: translate(-50% , 40%);
+            transform: translate(-50% , 20%);
             visibility: hidden;
             opacity: 0;
             transition-duration: 0.3s;
             left: 50%;
+            max-height: 300px;
+            overflow: hidden;
+            overflow-y: auto !important;
+            z-index: 999;
+            box-shadow: 0px 0px 25px 1px #00000029;
 
             a {
                 padding: 8px 12px;
@@ -35,7 +40,7 @@
         .abs-services-mega-menu-sec.active {
             visibility: visible;
             opacity: 100%;
-             transform: translate(-50% , 20%);
+             transform: translate(-50% , 10%);
             // transform: translateY(40px);
         }
     }
