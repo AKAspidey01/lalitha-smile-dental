@@ -89,7 +89,7 @@ const Header = () => {
 
             </button>
           </div>
-          <div className={`abs-services-mega-menu-sec grid grid-cols-12 ${megaMenu == true ? 'active': ''}`} onMouseEnter={() => setMegaMenu(true)} onMouseLeave={() => setMegaMenu(false)}>
+          <div className={`abs-services-mega-menu-sec grid grid-cols-12 ${megaMenu == true ? 'active': ''}`} onMouseEnter={() => setMegaMenu(true)} onMouseLeave={() => setMegaMenu(false)} data-lenis-prevent>
             {homePageData.ServicesData.map((item , index) => {
               return (
               <NavLink className={'col-span-3'} key={index}>

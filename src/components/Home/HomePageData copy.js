@@ -1,3 +1,12 @@
+import RoutineDental from '../../assets/images/services-icons/dental-checkup.svg';
+import TeethCleaning from '../../assets/images/services-icons/teeth-cleaning.svg';
+import DentalXRay from '../../assets/images/services-icons/dental-x-ray.svg';
+import Flouride from '../../assets/images/services-icons/flouride-treatment.svg';
+import SealantsTeeth from '../../assets/images/services-icons/sealants-cavity.svg';
+import ToothFillings from '../../assets/images/services-icons/tooth-fillings.svg';
+import DentalImplants from '../../assets/images/services-icons/dental-implants.svg';
+import DentalCrowns from '../../assets/images/services-icons/dental-crowns.svg';
+
 import Reviewer1 from '../../assets/images/testimonial-images/review-1.svg';
 import Reviewer2 from '../../assets/images/testimonial-images/review-2.svg';
 import Reviewer3 from '../../assets/images/testimonial-images/review-3.svg';
@@ -25,328 +34,179 @@ import Gallery4 from '../../assets/images/gallery-images/gallery-4.png';
 import Insta from '../../assets/images/insta.svg';
 import Face from '../../assets/images/face-book.svg';
 import Twitter from '../../assets/images/twitter.svg';
-import Linked from '../../assets/images/linked-in.svg';
+import Linked from '../../assets/images/linked-in.svg'
 
-
-// Services icons
-import DentalExams from '../../assets/images/services-icons/dental-exams.svg';
-import OralCancer from '../../assets/images/services-icons/oral-cancer-screening.svg';
-import DentalXray from '../../assets/images/services-icons/digital-xray.svg';
-import Preventive from '../../assets/images/services-icons/preventative.svg';
-import Restoratives from '../../assets/images/services-icons/restorative.svg';
-import Endodontics from '../../assets/images/services-icons/endodontics.svg';
-import Cosmetics from '../../assets/images/services-icons/cosmetics.svg';
-import Surgery from '../../assets/images/services-icons/surgery.svg';
-import Implants from '../../assets/images/services-icons/implants.svg';
-import Dentures from '../../assets/images/services-icons/dentures.svg';
-import Appliances from '../../assets/images/services-icons/appliances.svg';
-import SoleaLaser from '../../assets/images/services-icons/solea-laser.svg';
-import Orthodontics from '../../assets/images/services-icons/orthodontics.svg';
-import Botox from '../../assets/images/services-icons/botox-treatments.svg';
-import Fillers from '../../assets/images/services-icons/fillers.svg'
-import TeethWhitening from '../../assets/images/services-icons/teeth-whitening.svg';
 
 const ServicesData = [
     {
-        title: 'Dental Exams',
-        description: 'If your teeth are stained or discolored, professional teeth whitening is a quick and effective way to restore a brighter smile. ',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Adults',
-            },
-            {
-                singleSub: 'Kids',
-            },
-        ],
-        img: DentalExams
+        title: 'Routine Dental Checkups',
+        description: 'Regular exams help detect dental issues early, keeping your teeth and gums healthy.',
+        img: RoutineDental
     },
     {
-        title: 'Oral Cancer Screenings',
-        description: 'Regular oral cancer screenings help detect early signs of cancer or precancerous conditions, ensuring timely treatment and better outcomes for your oral health.',
-        sub: false,
-        img: OralCancer
+        title: 'Professional Teeth Cleaning',
+        description: 'Thorough cleanings remove plaque, tartar, and stains, leaving your smile fresh and polished.',
+        img: TeethCleaning
     },
     {
-        title: 'Digital intraoral X-Rays',
-        description: 'Digital intraoral X-rays provide clear, detailed images of your teeth and gums, allowing for accurate diagnosis and effective treatment with minimal radiation exposure.',
-        sub: false,
-        img: DentalXray
+        title: 'Digital X-Rays & Imaging',
+        description: 'Advanced digital imaging provides safe, accurate, and detailed views of your oral health.',
+        img: DentalXRay
     },
     {
-        title: 'Digital Panoramic X-Rays',
-        description: 'Digital panoramic X-rays capture a complete view of your entire mouth, including teeth, jaws, and surrounding structures, helping detect issues that may not be visible during a regular exam.',
-        sub: false,
-        img: DentalXray
+        title: 'Oral Cancer Screening',
+        description: 'Early detection screenings help identify warning signs of oral cancer for timely care.',
+        img: Flouride
     },
     {
-        title: 'Digital Cephalometric X-Rays',
-        description: 'Digital cephalometric X-rays provide precise images of the head and jaw alignment, helping in orthodontic planning and assessing facial growth and structure.',
-        sub: false,
-        img: DentalXray
+        title: 'Fluoride Treatment',
+        description: 'Fluoride strengthens enamel and helps prevent cavities in both children and adults.',
+        img: Flouride
     },
     {
-        title: 'Conebean CBCT X-Rays',
-        description: 'Cone Beam CBCT X-rays offer 3D imaging of your teeth, jaw, and facial structures, providing detailed insights for accurate diagnosis, implant planning, and complex dental treatments.',
-        sub: false,
-        img: DentalXray
+        title: 'Sealants for Cavity Prevention',
+        description: 'Protective coatings on molars shield teeth from decay and cavities',
+        img: SealantsTeeth
     },
     {
-        title: 'Preventative',
-        description: 'Preventative dental care focuses on maintaining healthy teeth and gums through regular checkups, cleanings, and early detection to prevent cavities and gum disease.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Teeth Cleanings',
-            },
-            {
-                singleSub: 'Deep Cleaning(Scaling and root Planing)',
-            },
-            {
-                singleSub: 'Preventative Maintenance Cleaning (Periodontal)',
-            },
-            {
-                singleSub: 'Antibiotic/Local  chemotherapeutic Therapy',
-            },
-            {
-                singleSub: 'Sealants',
-            },
-            {
-                singleSub: 'Fluoride Treatments',
-            },
-        ],
-        img: Preventive
+        title: 'Tooth-Colored Fillings',
+        description: 'Natural-looking fillings restore decayed teeth while blending seamlessly with your smile',
+        img: ToothFillings
     },
     {
-        title: 'Restorative',
-        description: 'Restorative dental care focuses on repairing and restoring damaged or missing teeth, improving both the function and appearance of your smile.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Cosmetic composite Fillings',
-            },
-            {
-                singleSub: 'Porcelain  Fillings',
-            },
-            {
-                singleSub: 'Porcelain Veneers',
-            },
-            {
-                singleSub: 'Bonding',
-            },
-            {
-                singleSub: 'Same day Crowns',
-            },
-            {
-                singleSub: 'Bridges',
-            },
-            {
-                singleSub: 'Dental Implant Crowns',
-            },
-        ],
-        img: Restoratives
+        title: 'Dental Crowns & Bridges',
+        description: 'Custom crowns and bridges repair damaged teeth and replace missing ones with strength and beauty.',
+        img: ToothFillings
     },
     {
-        title: 'Endodontics',
-        description: 'Endodontics involves treating issues inside the tooth, such as infected or damaged pulp, through procedures like root canals to save natural teeth and relieve pain.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Root Canals',
-            },
-        ],
-        img: Endodontics
+        title: 'Inlays & Onlays',
+        description: 'Durable restorations repair moderate damage while preserving your natural tooth structure.',
+        img: ToothFillings
     },
     {
-        title: 'Cosmetics',
-        description: 'Cosmetic dentistry enhances the appearance of your teeth and smile through treatments like whitening, veneers, and bonding for a more confident, radiant look.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Personalized Smile make overs',
-            },
-            {
-                singleSub: 'Facial Driven Cosmetics',
-            },
-        ],
-        img: Cosmetics
+        title: 'Dentures (Full & Partial)',
+        description: 'Comfortable, custom-made dentures restore function and confidence to your smile.',
+        img: ToothFillings
     },
     {
-        title: 'Surgery',
-        description: 'Oral surgery addresses complex dental issues through procedures like extractions, implants, and corrective treatments to restore function, health, and comfort.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Wisdom Teeth Removal under sedation',
-            },
-            {
-                singleSub: 'Surgical Removal of Teeth',
-            },
-            {
-                singleSub: 'Bone Grafting',
-            },
-            {
-                singleSub: 'Sinus Lift Surgery',
-            },
-            {
-                singleSub: 'Crown Lengthening Surgery',
-            },
-            {
-                singleSub: 'Bone / Osseous surgery',
-            },
-            {
-                singleSub: 'Gum Surgery',
-            },
-        ],
-        img: Surgery
+        title: 'Dental Implants (Placement & Restoration)',
+        description: 'Implants replace missing teeth with secure, long-lasting, and natural-looking solutions.',
+        img: ToothFillings
     },
     {
-        title: 'Implants',
-        description: 'Dental implants are permanent tooth replacements that restore function and appearance, providing a strong foundation for natural-looking teeth.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Single implant',
-            },
-            {
-                singleSub: 'Multiple Implants',
-            },
-            {
-                singleSub: 'All on 4 or  X  Implants',
-            },
-        ],
-        img: Implants
-    },
-    {
-        title: 'Dentures',
-        description: 'Dentures are removable dental appliances that replace missing teeth, restoring your ability to eat, speak, and smile confidently.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'complete dentures',
-            },
-            {
-                singleSub: 'Partial dentures',
-            },
-            {
-                singleSub: 'Implant Retained Removable dentures',
-            },
-            {
-                singleSub: 'Implant Retained Fixed dentures',
-            },
-            {
-                singleSub: 'Denture repairs',
-            },
-        ],
-        img: Dentures
-    },
-    {
-        title: 'Appliances',
-        description: 'Dental appliances are custom-made devices, such as mouthguards, retainers, or night guards, designed to protect, align, or support your teeth and jaw.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'TMD  appliances',
-            },
-            {
-                singleSub: 'Sleep Apnea Oral Appliance',
-            },
-            {
-                singleSub: 'Bruxism Appliance',
-            },
-            {
-                singleSub: 'Sport Guards',
-            },
-            {
-                singleSub: 'Retainer',
-            },
-            {
-                singleSub: 'Homeo block',
-            },
-        ],
-        img: Appliances
-    },
-    {
-        title: 'SOLEA laser',
-        description: 'The SOLEA laser provides precise, minimally invasive dental treatments with reduced pain, bleeding, and recovery time, enhancing patient comfort and care.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Anesthesia free fillings ',
-            },
-            {
-                singleSub: 'Frenectomy ',
-            },
-            {
-                singleSub: 'Depigmentation of the Gum Tissues',
-            },
-            {
-                singleSub: 'Gummy smile',
-            },
-            {
-                singleSub: 'Tightening of palate for snoring',
-            },
-        ],
-        img: SoleaLaser
-    },
-    {
-        title: 'Orthodontics',
-        description: 'Orthodontics focuses on correcting misaligned teeth and jaws using braces, aligners, and other devices to improve bite, function, and smile aesthetics.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Traditional Braces',
-            },
-            {
-                singleSub: '6 Moth Smiles',
-            },
-            {
-                singleSub: 'Clear aligners/Invisalign',
-            },
-        ],
-        img: Orthodontics
-    },
-    {
-        title: 'Botox treatments',
-        description: 'Botox treatments help reduce facial wrinkles and fine lines, providing a smoother, more youthful appearance and complementing overall cosmetic dental care.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'TMD problems',
-            },
-            {
-                singleSub: 'Migraines/ headaches',
-            },
-            {
-                singleSub: 'Gummy smile',
-            },
-        ],
-        img: Botox
-    },
-    {
-        title: 'Fillers',
-        description: 'Dermal fillers restore volume and enhance facial contours, smoothing wrinkles and improving the overall appearance of your smile and facial aesthetics.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'Cosmetic smile',
-            },
-        ],
-        img: Fillers
+        title: 'Root Canal Therapy',
+        description: 'Gentle treatment saves infected teeth and relieves pain while preserving your smile.',
+        img: ToothFillings
     },
     {
         title: 'Teeth Whitening',
-        description: 'Teeth whitening is a safe and effective treatment that brightens discolored or stained teeth, giving you a more radiant and confident smile.',
-        sub: true,
-        subServices: [
-            {
-                singleSub: 'In Office Zoom laser whitening',
-            },
-            {
-                singleSub: 'At home Whitening Kits',
-            },
-        ],
-        img: TeethWhitening
+        description: 'Professional whitening brightens your teeth safely for a radiant, confident smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Porcelain Veneers',
+        description: 'Thin, custom veneers correct chips, stains, and gaps for a flawless appearance.',
+        img: ToothFillings
+    },
+    {
+        title: 'Cosmetic Bonding',
+        description: 'Bonding quickly repairs chips, cracks, and discoloration for a natural-looking smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Smile Makeovers',
+        description: 'Personalized treatments combine cosmetic and restorative care to transform your smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Traditional Braces',
+        description: 'Metal braces straighten teeth effectively, improving bite and long-term oral health.',
+        img: ToothFillings
+    },
+    {
+        title: 'Invisalign®',
+        description: 'Discreet aligners gradually straighten teeth without wires or brackets.',
+        img: ToothFillings
+    },
+    {
+        title: 'Retainers',
+        description: 'Custom retainers maintain your orthodontic results and keep your smile in place.',
+        img: ToothFillings
+    },
+    {
+        title: 'Tooth Extractions',
+        description: 'Safe, comfortable extractions remove damaged or problematic teeth when necessary.',
+        img: ToothFillings
+    },
+    {
+        title: 'Wisdom Teeth Removal',
+        description: 'Gentle removal prevents pain, crowding, and future oral health problems.',
+        img: ToothFillings
+    },
+    {
+        title: 'Bone Grafting',
+        description: 'Bone grafts restore jaw strength and support for dental implants.',
+        img: ToothFillings
+    },
+    {
+        title: 'Dental Implant Surgery',
+        description: 'Precise implant surgery replaces missing teeth with lasting, secure results.',
+        img: ToothFillings
+    },
+    {
+        title: 'Deep Cleaning',
+        description: 'Thorough gum therapy removes plaque below the gumline to treat and prevent disease.',
+        img: ToothFillings
+    },
+    {
+        title: 'Gum Disease Treatment & Maintenance',
+        description: 'Targeted treatments restore gum health and prevent future periodontal issues.',
+        img: ToothFillings
+    },
+    {
+        title: 'Laser Gum Therapy',
+        description: 'Minimally invasive laser treatment gently heals and reshapes diseased gum tissue.',
+        img: ToothFillings
+    },
+    {
+        title: 'Infant & Child Dental Exams',
+        description: 'Gentle exams monitor growth and help children develop healthy dental habits early.',
+        img: ToothFillings
+    },
+    {
+        title: 'Preventive Sealants & Fluoride',
+        description: 'Sealants and fluoride provide extra protection against childhood cavities.',
+        img: ToothFillings
+    },
+    {
+        title: 'Early Orthodontic Evaluation',
+        description: 'Timely assessments guide jaw and teeth development for a healthy smile.',
+        img: ToothFillings
+    },
+    {
+        title: 'Cavity Fillings for Children',
+        description: 'Kid-friendly fillings repair cavities with safe, natural-looking materials.',
+        img: ToothFillings
+    },
+    {
+        title: 'Same-Day Emergency Visits',
+        description: 'Quick emergency care provides relief and solutions when you need them most.',
+        img: ToothFillings
+    },
+    {
+        title: 'Toothache Relief',
+        description: 'Gentle treatments address the cause of pain and restore comfort quickly.',
+        img: ToothFillings
+    },
+    {
+        title: 'Broken Tooth Repair',
+        description: 'Urgent repair helps save or restore damaged teeth after accidents.',
+        img: ToothFillings
+    },
+    {
+        title: 'Emergency Extractions',
+        description: 'Immediate extractions relieve severe pain and prevent further complications.',
+        img: ToothFillings
     },
 ]
 
@@ -802,15 +662,15 @@ const SocialMedia = [
     },
 ]
 
-const homePageData = {
-    ServicesData,
-    TestimonialData,
-    RedefinedDent,
-    FinancingList,
-    Faqs,
-    PricingList,
-    GalleryList,
-    SocialMedia
-}
+// const homePageData = {
+//     ServicesData,
+//     TestimonialData,
+//     RedefinedDent,
+//     FinancingList,
+//     Faqs,
+//     PricingList,
+//     GalleryList,
+//     SocialMedia
+// }
 
-export default homePageData
+// export default homePageData

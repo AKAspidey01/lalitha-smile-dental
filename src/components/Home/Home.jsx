@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Home.scss';
-import AboutImg from '../../assets/images/about-us-image.png';
+import AboutImg from '../../assets/images/about-us-image-2.png';
 import ServicesCarousel from './ServicesCarousel';
 import TestimonialImg from '../../assets/images/testimonial-block.png'
 import TestimonialCarousel from './TestimonialCarousel';
@@ -91,7 +91,7 @@ const Home = () => {
                                     <h2>The Story Behind <br /> <span>Every Smile</span></h2>
                                     <div className="block-cotent-para-sec">
                                         <p>Dr. Achyuta exudes an enthusiasm for enhancing smiles, from cosmetic to oral health needs, she believes in the vital role dentistry plays in one’s life. "I passionately strive to provide the best care for all of my patients because I understand the great significance of taking preventative measures to achieve optimal results." Dr. Achyuta enjoys creating happy, healthy, and confident smiles!</p>
-                                        <p>She received her BDS degree in India and her Doctor of Dental Surgery degree from Dental Board of California in 2004. Dr. Achyuta and her talented team of experts have a compassionate and meticulous standard of care, focusing on creating a comfortable and enjoyable environment. To that end, their goal is to foster a long-term, conscientious, and supportive relationship with patients.</p>
+                                        {/* <p>She received her BDS degree in India and her Doctor of Dental Surgery degree from Dental Board of California in 2004. Dr. Achyuta and her talented team of experts have a compassionate and meticulous standard of care, focusing on creating a comfortable and enjoyable environment. To that end, their goal is to foster a long-term, conscientious, and supportive relationship with patients.</p> */}
                                     </div>
                                     <div className="signature-knowmore-section flex items-end justify-between flex-wrap gap-y-6">
                                         <div className="left-signature">

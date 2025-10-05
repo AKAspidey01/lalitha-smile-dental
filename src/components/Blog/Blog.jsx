@@ -32,7 +32,7 @@ const Blog = () => {
                                             <div className="left-time-icon w-5 h-5">
                                                 <img src={TimeIcon} alt="" />
                                             </div>
-                                            <p className='text-[#849954] font-semibold font-plusjakarta'>25 May 2025</p>
+                                            <p className='text-[#849954] font-semibold font-plusjakarta'>{item.date}</p>
                                         </div>
                                         <div className="service-section-content">
                                             <h4 className='mb-2'>{item.title}</h4>

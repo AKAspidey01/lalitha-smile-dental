@@ -5,14 +5,33 @@
         padding: 100px 0px;
 
         .right-search-services-section {
+            .abs-icon-search {
+                left: 15px;
+                top: 50%;
+                transform: translate(-0% , -50%);
+            }
             input {
-                padding: 10px 25px;
+                padding: 10px 25px 10px 50px;
                 border-radius: 10px;
             }
         }
 
         .services-list-grid-section {
             margin-top: 40px;
+
+            .sub-services-list-section {
+                ul {
+                    list-style: disc !important;
+                    padding-left: 15px !important;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                     li {
+                        font-size: 14px;
+                     }
+                }
+            }
         }
     }
 }
@@ -38,6 +57,12 @@
         .services-list-grid-section {
             .single-service-section {
                 grid-column: span 12 / span 12;       
+            }
+        }
+
+        .right-search-services-section {
+            input {
+                min-width: auto !important;
             }
         }
     }
