@@ -48,6 +48,7 @@ import TeethWhitening from '../../assets/images/services-icons/teeth-whitening.s
 
 const ServicesData = [
     {
+        id: 1,
         title: 'Dental Exams',
         description: 'If your teeth are stained or discolored, professional teeth whitening is a quick and effective way to restore a brighter smile. ',
         sub: true,
@@ -62,36 +63,42 @@ const ServicesData = [
         img: DentalExams
     },
     {
+        id: 2,
         title: 'Oral Cancer Screenings',
         description: 'Regular oral cancer screenings help detect early signs of cancer or precancerous conditions, ensuring timely treatment and better outcomes for your oral health.',
         sub: false,
         img: OralCancer
     },
     {
+        id: 3,
         title: 'Digital intraoral X-Rays',
         description: 'Digital intraoral X-rays provide clear, detailed images of your teeth and gums, allowing for accurate diagnosis and effective treatment with minimal radiation exposure.',
         sub: false,
         img: DentalXray
     },
     {
+        id: 4,
         title: 'Digital Panoramic X-Rays',
         description: 'Digital panoramic X-rays capture a complete view of your entire mouth, including teeth, jaws, and surrounding structures, helping detect issues that may not be visible during a regular exam.',
         sub: false,
         img: DentalXray
     },
     {
+        id: 5,
         title: 'Digital Cephalometric X-Rays',
         description: 'Digital cephalometric X-rays provide precise images of the head and jaw alignment, helping in orthodontic planning and assessing facial growth and structure.',
         sub: false,
         img: DentalXray
     },
     {
+        id: 6,
         title: 'Conebean CBCT X-Rays',
         description: 'Cone Beam CBCT X-rays offer 3D imaging of your teeth, jaw, and facial structures, providing detailed insights for accurate diagnosis, implant planning, and complex dental treatments.',
         sub: false,
         img: DentalXray
     },
     {
+        id: 7,
         title: 'Preventative',
         description: 'Preventative dental care focuses on maintaining healthy teeth and gums through regular checkups, cleanings, and early detection to prevent cavities and gum disease.',
         sub: true,
@@ -118,6 +125,7 @@ const ServicesData = [
         img: Preventive
     },
     {
+        id: 8,
         title: 'Restorative',
         description: 'Restorative dental care focuses on repairing and restoring damaged or missing teeth, improving both the function and appearance of your smile.',
         sub: true,
@@ -147,6 +155,7 @@ const ServicesData = [
         img: Restoratives
     },
     {
+        id: 9,
         title: 'Endodontics',
         description: 'Endodontics involves treating issues inside the tooth, such as infected or damaged pulp, through procedures like root canals to save natural teeth and relieve pain.',
         sub: true,
@@ -158,6 +167,7 @@ const ServicesData = [
         img: Endodontics
     },
     {
+        id: 10,
         title: 'Cosmetics',
         description: 'Cosmetic dentistry enhances the appearance of your teeth and smile through treatments like whitening, veneers, and bonding for a more confident, radiant look.',
         sub: true,
@@ -172,6 +182,7 @@ const ServicesData = [
         img: Cosmetics
     },
     {
+        id: 11,
         title: 'Surgery',
         description: 'Oral surgery addresses complex dental issues through procedures like extractions, implants, and corrective treatments to restore function, health, and comfort.',
         sub: true,
@@ -201,6 +212,7 @@ const ServicesData = [
         img: Surgery
     },
     {
+        id: 12,
         title: 'Implants',
         description: 'Dental implants are permanent tooth replacements that restore function and appearance, providing a strong foundation for natural-looking teeth.',
         sub: true,
@@ -218,6 +230,7 @@ const ServicesData = [
         img: Implants
     },
     {
+        id: 13,
         title: 'Dentures',
         description: 'Dentures are removable dental appliances that replace missing teeth, restoring your ability to eat, speak, and smile confidently.',
         sub: true,
@@ -241,6 +254,7 @@ const ServicesData = [
         img: Dentures
     },
     {
+        id: 14,
         title: 'Appliances',
         description: 'Dental appliances are custom-made devices, such as mouthguards, retainers, or night guards, designed to protect, align, or support your teeth and jaw.',
         sub: true,
@@ -267,6 +281,7 @@ const ServicesData = [
         img: Appliances
     },
     {
+        id: 15,
         title: 'SOLEA laser',
         description: 'The SOLEA laser provides precise, minimally invasive dental treatments with reduced pain, bleeding, and recovery time, enhancing patient comfort and care.',
         sub: true,
@@ -290,6 +305,7 @@ const ServicesData = [
         img: SoleaLaser
     },
     {
+        id: 16,
         title: 'Orthodontics',
         description: 'Orthodontics focuses on correcting misaligned teeth and jaws using braces, aligners, and other devices to improve bite, function, and smile aesthetics.',
         sub: true,
@@ -307,6 +323,7 @@ const ServicesData = [
         img: Orthodontics
     },
     {
+        id: 17,
         title: 'Botox treatments',
         description: 'Botox treatments help reduce facial wrinkles and fine lines, providing a smoother, more youthful appearance and complementing overall cosmetic dental care.',
         sub: true,
@@ -324,6 +341,7 @@ const ServicesData = [
         img: Botox
     },
     {
+        id: 18,
         title: 'Fillers',
         description: 'Dermal fillers restore volume and enhance facial contours, smoothing wrinkles and improving the overall appearance of your smile and facial aesthetics.',
         sub: true,
@@ -335,6 +353,7 @@ const ServicesData = [
         img: Fillers
     },
     {
+        id: 19,
         title: 'Teeth Whitening',
         description: 'Teeth whitening is a safe and effective treatment that brightens discolored or stained teeth, giving you a more radiant and confident smile.',
         sub: true,

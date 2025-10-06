@@ -12,7 +12,7 @@ const Footer = () => {
 
 
   return (
-    <div className={`main-footer-section ${location.pathname == '/services' || location.pathname == '/contact' || location.pathname == '/blog' ? 'service-footer' : ''}`}>
+    <div className={`main-footer-section ${location.pathname == '/services' || location.pathname == '/contact' || location.pathname == '/blog' || location.pathname.startsWith('/services/') ? 'service-footer' : ''}`}>
       <div className="inner-main-footer-section">
         <div className="top-newsletter-section">
           <div className="container">

@@ -1,5 +1,5 @@
 .main-services-section {
-            background: #F6F6F6;
+    background: #F6F6F6;
     .services-section-1 {
 
         padding: 100px 0px;
@@ -29,11 +29,87 @@
 
                      li {
                         font-size: 14px;
+                        font-family: "Plus Jakarta Sans", sans-serif !important;
                      }
                 }
             }
         }
     }
+}
+
+.singleservice-main-section {
+    background: #F6F6F6;
+
+    .single-service-section-1 {
+        padding: 100px 0px;
+
+        .single-service-content-section {
+             .top-image-section-single-service {
+                    img {
+                        max-height: 400px;
+                        object-fit: cover;
+                    }
+                }
+            .single-service-content-sec-inner {
+                padding: 30px;
+
+                .highlight-points-sec {
+                    padding: 20px;
+                    border-radius: 15px;
+                    background: #F4F4F4;
+
+                    h4 {
+                        margin-bottom: 10px !important;
+                    }
+                }
+
+                h2 {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #000;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #000;
+                    line-height: 26px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #9B4522;
+                }
+
+                h3 {
+                    font-size: 22px;
+                    color: #9B4522;
+                    font-weight: 600;
+                }
+
+                h5 {
+                    font-size: 18px;
+                    color: #000;
+                    font-weight: 600;
+                }
+
+                ul {
+                    list-style: disc !important;
+                    padding-left: 15px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    li {
+                        font-size: 14px;
+                        color: #000;
+                    }
+                }
+                
+            }
+        }
+    }
+
+
 }
 
 

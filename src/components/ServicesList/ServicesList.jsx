@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import '../Home/Home.scss';
 import './ServicesList.scss';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import homePageData from '../Home/HomePageData';
 
 const ServicesList = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate()
 
   // Filter the services based on input
   const filteredServices = homePageData.ServicesData.filter(service =>
@@ -53,26 +54,24 @@ const ServicesList = () => {
                       <div className="service-section-content">
                           <h4>{item.title}</h4>
                           <p>{item.description}</p>
-
-                        {item.sub == true ? 
-                          <div className="sub-services-list-section bg-[#F3F3F3] p-4 rounded-xl my-5">
-                            <ul>
-                              {item.subServices.slice(0, 3).map((subService , subIndex) => {
-                                return (
-                                  <li key={subIndex}>{subService.singleSub}</li>
-                                )
-                              })}
-                              {item.subServices.length > 3 && (
-                                <li className="font-semibold">
-                                  +{item.subServices.length - 3} more
-                                </li>
-                              )}
-                            </ul>
-                          </div> : null
-                        }
-
+                          {item.sub == true ? 
+                            <div className="sub-services-list-section bg-[#F3F3F3] p-4 rounded-xl my-5">
+                              <ul>
+                                {item.subServices.slice(0, 3).map((subService , subIndex) => {
+                                  return (
+                                    <li key={subIndex}>{subService.singleSub}</li>
+                                  )
+                                })}
+                                {item.subServices.length > 3 && (
+                                  <li className="font-semibold">
+                                    +{item.subServices.length - 3} more
+                                  </li>
+                                )}
+                              </ul>
+                            </div> : null
+                          }
                           <div className="know-more-linear-btn">
-                              <button type="button" className='flex items-center gap-x-4 text-secondary hover:text-primary'>Know More <i class="bi bi-arrow-right"></i></button>
+                              <button type="button" onClick={() => navigate(`/services/${item.id}`)} className='flex items-center gap-x-4 text-secondary hover:text-primary'>Know More <i class="bi bi-arrow-right"></i></button>
                           </div>
                       </div>
                     </div>
