@@ -71,7 +71,7 @@ const ServicesList = () => {
                             </div> : null
                           }
                           <div className="know-more-linear-btn">
-                              <button type="button" onClick={() => navigate(`/services/${item.id}`)} className='flex items-center gap-x-4 text-secondary hover:text-primary'>Know More <i class="bi bi-arrow-right"></i></button>
+                              <button type="button" onClick={() => navigate(`/services/${item.id}`, { state: { item } })} className='flex items-center gap-x-4 text-secondary hover:text-primary'>Know More <i class="bi bi-arrow-right"></i></button>
                           </div>
                       </div>
                     </div>

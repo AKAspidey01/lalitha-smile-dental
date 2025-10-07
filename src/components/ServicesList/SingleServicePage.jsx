@@ -1,12 +1,14 @@
 import React from 'react';
 import './ServicesList.scss';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import ServicesImage from '../../assets/images/services-images/one.png'
 
 
 const SingleServicePage = () => {
 
-    const navigate = useNavigate()
+    const location = useLocation()
+    const navigate = useNavigate();
+    const { item } = location.state || {}
 
   return (
     <div className='singleservice-main-section'>
@@ -34,40 +36,47 @@ const SingleServicePage = () => {
                     </div>
                     <div className="single-service-content-section rounded-4xl overflow-hidden bg-white">
                         <div className="top-image-section-single-service">
-                            <img src={ServicesImage} alt="" />
+                            <img src={item?.singleServiceData?.serviceImg} alt="" />
                         </div>
                         <div className="single-service-content-sec-inner">
                             <div className="top-para-head-sec-single-ser">
-                                <h2>Preventative Dentistry</h2>
-                                <p>Preventative dental care is the foundation of lifelong oral health. By focusing on early detection, professional cleanings, and protective treatments, we help you avoid serious dental issues and maintain a confident, healthy smile. Our goal is simple: keep your teeth and gums strong so you can enjoy the benefits of good oral health for years to come.</p>
+                                <h2>{item?.title}</h2>
+                                <p>{item?.singleServiceData?.para}</p>
                                 
-                                <div className="highlight-points-sec mt-8">
-                                    <h4>Why Preventative Care Matters</h4>
+                                <div className="highlight-points-sec my-8">
+                                    <h4>Why {item?.title} Matters</h4>
                                     <ul>
-                                        <li>Prevents cavities, gum disease, and enamel wear before they become severe.</li>
-                                        <li>Saves time, money, and discomfort by reducing the need for major procedures.</li>
-                                        <li>Supports overall well-being—oral health is closely linked to heart and systemic health.</li>
-                                        <li>Promotes confidence with a naturally clean, bright smile.</li>
+                                        {item?.singleServiceData?.whyServicePoints?.map((singleWhy , whyIndex) => {
+                                            return (
+                                                <li key={whyIndex}>{singleWhy?.point}</li>
+                                            )
+                                        })}
                                     </ul>
                                 </div>
-
-                                <div className="sub-services-section my-8">
-                                    <h3 className='mb-3'>Our Preventative Services</h3>
-                                    <div className="all-sub-service-collab">
-                                        <div className="single-sub-service-sec">
-                                            <h5>1. Teeth Cleanings</h5>
-                                            <p>Regular cleanings remove plaque and tartar buildup that brushing and flossing alone cannot eliminate. This helps prevent cavities, gum disease, and bad breath.</p>
+                                {item?.sub == true ? 
+                                    <div className="sub-services-section">
+                                        <h3 className='mb-3'>Our {item?.title} Services</h3>
+                                        <div className="all-sub-service-collab flex flex-col gap-y-5">
+                                            {item?.singleServiceData?.subServicesContent?.map((subItem , subIndex) => {
+                                                return (
+                                                    <div className="single-sub-service-sec" key={subIndex}>
+                                                        <h5>{subItem?.subserviceHead}</h5>
+                                                        <p>{subItem?.subServicePara}</p>
+                                                    </div>
+                                                )
+                                            })}
                                         </div>
-                                    </div>
-                                </div>
+                                    </div> : 
+                                null}
 
-                                <div className="highlight-points-sec">
-                                    <h4>Why Preventative Care Matters</h4>
+                                <div className="highlight-points-sec mt-8">
+                                    <h4>Benefits of Choosing Our {item?.title}</h4>
                                     <ul>
-                                        <li>Prevents cavities, gum disease, and enamel wear before they become severe.</li>
-                                        <li>Saves time, money, and discomfort by reducing the need for major procedures.</li>
-                                        <li>Supports overall well-being—oral health is closely linked to heart and systemic health.</li>
-                                        <li>Promotes confidence with a naturally clean, bright smile.</li>
+                                        {item?.singleServiceData?.benefitsofChoosing?.map((benefit , benIndex) => {
+                                            return (
+                                                <li key={benIndex}>{benefit?.points}</li>
+                                            )
+                                        })}
                                     </ul>
                                 </div>
                             </div>

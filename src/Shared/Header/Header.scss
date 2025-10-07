@@ -1,6 +1,13 @@
 .main-header-section {
     // overflow: hidden;
     // overflow-y: auto !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-bottom: 1px solid #1f1f1f30;
+    z-index: 99;
     .inner-header-section {
         padding: 15px 0px;
 
@@ -46,7 +53,7 @@
     }
     .header-grid-section {
         .left-header-logo {
-            height: 80px;
+            height: 60px;
             width: fit-content;
         }
         .desktop-menu-section {
@@ -159,7 +166,7 @@
         }
         .header-grid-section {
             .left-header-logo {
-                height: 60px;
+                height: 45px;
             }
         }
         .abs-services-mega-menu-sec {

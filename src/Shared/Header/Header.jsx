@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Logo from '../../assets/images/logo.svg';
 import './Header.scss';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import homePageData from '../../components/Home/HomePageData';
 import MenuIcon from '../../assets/images/menu-bar-icon.svg';
 
@@ -21,6 +21,8 @@ const Header = () => {
   const handleMobileMenu = () => {
       setMobileMenu(!mobileMenu)
   }
+
+  const navigate = useNavigate()
 
   return (
     <div className="main-header-section">
@@ -55,7 +57,7 @@ const Header = () => {
               </nav>
             </div>
             <div className="get-appointment-btn">
-              <button type="button" className='bg-primary'>Get Appointment</button>
+              <button type="button" className='bg-primary' onClick={() => navigate('/contact')}>Get Appointment</button>
             </div>
 
             <div className="mobile-menu-button">

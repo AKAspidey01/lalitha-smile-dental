@@ -22,6 +22,11 @@ const Home = () => {
 
     const [openIndex, setOpenIndex] = useState(null);
     const contentRefs = useRef([]);
+    const appointmentSectionRef = useRef(null);
+
+    const handleScrollToSection = () => {
+        appointmentSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     const toggleAccordion = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -68,8 +73,8 @@ const Home = () => {
                         <h1>Creating Beautiful Smiles <br /> with Personal Touch</h1>
                         <p>Our dedicated team of professionals is committed to delivering <br /> personalized, high-quality dental care in a comfortable and friendly environment.</p>
                         <div className="banner-buttons-section flex items-center gap-x-7 flex-wrap gap-y-6">
-                            <button type="button" className='appointment-btn bg-primary'>Get Appointment</button>
-                            <button type="button" className='number-btn bg-white flex items-center gap-x-3'><i class="bi bi-telephone-fill"></i> (123) 456-7890</button>
+                            <button type="button" className='appointment-btn bg-primary' onClick={handleScrollToSection}>Get Appointment</button>
+                            <button type="button" className='number-btn bg-white flex items-center gap-x-3' onClick={() => window.location.href = 'tel:+12125551234'}><i class="bi bi-telephone-fill"></i> +1 (212) 555-1234</button>
                         </div>
                     </div>
                 </div>
@@ -196,7 +201,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <section className="home-section-7">
+        <section className="home-section-7" ref={appointmentSectionRef}>
             <div className="inner-home-section-7">
                 <div className="container">
                     <div className="block-content-section">
