@@ -94,7 +94,7 @@ const Header = () => {
           <div className={`abs-services-mega-menu-sec grid grid-cols-12 ${megaMenu == true ? 'active': ''}`} onMouseEnter={() => setMegaMenu(true)} onMouseLeave={() => setMegaMenu(false)} data-lenis-prevent>
             {homePageData.ServicesData.map((item , index) => {
               return (
-              <NavLink className={'col-span-3'} key={index}>
+              <NavLink className={'col-span-3'} key={index} to={{ pathname: `/services/${item.id}`, }} state={{ item }}>
                 <div className="inner-single-megamenu-item flex gap-3 items-center">
                   <div className="left-icon-mega-menu-item w-10 h-10 min-w-10 min-h-10">
                     <img src={item.img} alt="" />
