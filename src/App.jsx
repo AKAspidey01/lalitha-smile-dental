@@ -11,6 +11,7 @@ import AboutUs from './components/AboutUs/AboutUs'
 import ContactUs from './components/ContactUs/ContactUs'
 import Blog from './components/Blog/Blog'
 import SingleServicePage from './components/ServicesList/SingleServicePage'
+import BlogSinglePage from './components/Blog/BlogSinglePage'
 
 
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/services/:id' Component={SingleServicePage} exact={true}/>
           <Route path='/contact' Component={ContactUs} exact={true}/>
           <Route path='/blog' Component={Blog} exact={true}/>
+          <Route path='/blog/:id' Component={BlogSinglePage} exact={true}/>
         </Routes>
         <Footer/>
       </Router>

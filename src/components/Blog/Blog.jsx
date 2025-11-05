@@ -1,11 +1,14 @@
 import React from 'react';
 import './Blog.scss'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import blogscontent from './BlogContent';
 import TimeIcon from '../../assets/images/time-blog-icon.svg';
 
 
 const Blog = () => {
+
+    const navigate = useNavigate()
+    
   return (
     <div className="main-blog-section">
         <div className="inner-blog-section">
@@ -38,7 +41,7 @@ const Blog = () => {
                                             <h4 className='mb-2'>{item.title}</h4>
                                             <p>{item.content}</p>
                                             <div className="know-more-linear-btn">
-                                                <button type="button" className='flex items-center gap-x-4 text-secondary hover:text-primary'>Read More <i class="bi bi-arrow-right"></i></button>
+                                                <button type="button" onClick={() => navigate(`/blog/${item.id}`)} className='flex items-center gap-x-4 text-secondary hover:text-primary'>Read More <i class="bi bi-arrow-right"></i></button>
                                             </div>
                                         </div>
                                     </div>

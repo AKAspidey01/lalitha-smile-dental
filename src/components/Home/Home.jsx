@@ -13,6 +13,7 @@ import VisitIcon from '../../assets/images/visit-us-icon.svg';
 import TimingIcon from '../../assets/images/clinic-timings-icon.svg';
 import PricingCarousel from './PricingCarousel';
 import GalleryCarousel from './GalleryCarousel';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -23,6 +24,7 @@ const Home = () => {
     const [openIndex, setOpenIndex] = useState(null);
     const contentRefs = useRef([]);
     const appointmentSectionRef = useRef(null);
+    const navigate = useNavigate()
 
     const handleScrollToSection = () => {
         appointmentSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -105,7 +107,7 @@ const Home = () => {
                                             <p className="role-sec">FOUNDER LALITHA SMILE DENTAL</p>
                                         </div>
                                         <div className="right-know-more-sec">
-                                            <button type="button" className='flex items-center gap-x-4 bg-primary'>Read More <i class="bi bi-arrow-right"></i></button>
+                                            <button onClick={() => navigate('/about')} type="button" className='flex items-center gap-x-4 bg-primary'>Read More <i class="bi bi-arrow-right"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -284,7 +286,10 @@ const Home = () => {
                                     <div className="left-sec-7-icon"><img src={CallIcon} alt="" /></div>
                                     <h4>Contact Us</h4>
                                 </div>
-                                <a href='tel:+1212555-1234' className='number-anchor'>+1 (212) 555-1234</a>
+                                <div className="contact-links flex flex-col">
+                                    <a href='tel:+1212555-1234' className='number-anchor mb-1'>+1 (707) 778-9993</a>
+                                    <a href='mailto:info@lalithadental.com' className='number-anchor'>info@lalithadental.com</a>
+                                </div>
                            </div>
                         </div>
                         <div className="col-span-4 similar-sec-7-timings-cols">
@@ -304,8 +309,9 @@ const Home = () => {
                                 </div>
                                 <div>
                                     <p>Monday - Friday : </p>
-                                    <div className="timings-text">
-                                        <h5>08:30AM to 05:00PM</h5>
+                                    <div className="timings-text mt-1.5">
+                                        <h5>08:30AM to 12:30PM</h5>
+                                        <h5>01:30AM to 05:30PM</h5>
                                     </div>
                                 </div>
                             </div>

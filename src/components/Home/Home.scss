@@ -366,7 +366,7 @@
       padding: 20px;
 
       h5 {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 500;
         font-family: "Plus Jakarta Sans", sans-serif !important;
       }
@@ -378,8 +378,14 @@
         font-family: "Plus Jakarta Sans", sans-serif !important;
       }
       a {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
+        transition-duration: 0.3s;
+        color: #101010;
+
+        &:hover {
+          color: #a5bc6c !important;
+        }
       }
     }
     .top-icon-label-sec {

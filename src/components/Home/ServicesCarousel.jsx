@@ -63,7 +63,7 @@ const ServicesCarousel = () => {
                                 <h4>{item.title}</h4>
                                 <p>{item.description}</p>
                                 <div className="know-more-linear-btn">
-                                    <button type="button" className='flex items-center gap-x-4 text-secondary hover:text-primary'>Know More <i class="bi bi-arrow-right"></i></button>
+                                    <button type="button" onClick={() => navigate(`/services/${item.id}`, { state: { item } })} className='flex items-center gap-x-4 text-secondary hover:text-primary'>Know More <i class="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
                         </div>

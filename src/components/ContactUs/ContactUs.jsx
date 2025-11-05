@@ -130,7 +130,10 @@ const ContactUs = () => {
                                         <div className="left-sec-7-icon"><img src={CallIcon} alt="" /></div>
                                         <h4>Contact Us</h4>
                                     </div>
-                                    <a href='tel:+1212555-1234' className='number-anchor'>+1 (212) 555-1234</a>
+                                    <div className="contact-links flex flex-col">
+                                        <a href='tel:+1212555-1234' className='number-anchor mb-1'>+1 (707) 778-9993</a>
+                                        <a href='mailto:info@lalithadental.com' className='number-anchor'>info@lalithadental.com</a>
+                                    </div>
                             </div>
                             </div>
                             <div className="col-span-4 similar-sec-7-timings-cols">
@@ -150,8 +153,9 @@ const ContactUs = () => {
                                     </div>
                                     <div>
                                         <p>Monday - Friday : </p>
-                                        <div className="timings-text">
-                                            <h5>08:30AM to 05:00PM</h5>
+                                        <div className="timings-text mt-1.5">
+                                            <h5>08:30AM to 12:30PM</h5>
+                                            <h5>01:30AM to 05:30PM</h5>
                                         </div>
                                     </div>
                                 </div>

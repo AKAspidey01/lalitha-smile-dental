@@ -88,7 +88,8 @@ const Footer = () => {
                             <nav>
                               <ul>
                                 <li><a href="">1372 N McDowell Blvd B1, Petaluma, CA 94954, USA</a></li>
-                                <li><a href="" className='mobile-number'><i class="bi bi-telephone-fill"></i>(123) 456-7890</a></li>
+                                <li><a href="tel:+17077789993" className='mobile-number'><i class="bi bi-telephone-fill"></i>+1 (707) 778-9993</a></li>
+                                <li><a href="mailto:info@lalithadental.com" className='mobile-number'><i class="bi bi-envelope-at-fill"></i>info@lalithadental.com</a></li>
                               </ul>
                             </nav>
                           </div>
