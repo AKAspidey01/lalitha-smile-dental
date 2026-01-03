@@ -5,8 +5,12 @@ import { Autoplay , Navigation } from 'swiper/modules';
 import './Home.scss'
 
 import 'swiper/css';
+import { useNavigate } from 'react-router-dom';
 
 const PricingCarousel = () => {
+
+    const navigate = useNavigate()
+
   return (
     // <>
     //     <Swiper
@@ -94,7 +98,7 @@ const PricingCarousel = () => {
                             {/* <h2>{item.price} <span> /year</span></h2> */}
                             <p>{item.tageLine}</p>
                                 <div className="right-know-more-sec">
-                                <button type="button" className='flex items-center gap-x-4 bg-primary'>Get Started Today</button>
+                                <button onClick={() => navigate('/contact')} type="button" className='flex items-center gap-x-4 bg-primary'>Get Started Today</button>
                             </div>
                         </div>
                         <div className="pricing-listing-section">
