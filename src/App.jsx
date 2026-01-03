@@ -12,6 +12,8 @@ import ContactUs from './components/ContactUs/ContactUs'
 import Blog from './components/Blog/Blog'
 import SingleServicePage from './components/ServicesList/SingleServicePage'
 import BlogSinglePage from './components/Blog/BlogSinglePage'
+import ScrollToTop from './utils/ScrollToTop'
+import ComingSoon from './utils/ComingSoon'
 
 
 
@@ -20,6 +22,7 @@ function App() {
   return (
     <LenisProvider>
       <Router>
+        <ScrollToTop/>
         <Header/>
         <Routes>
           <Route path='/' Component={Home} exact={true}/>
@@ -33,6 +36,9 @@ function App() {
         <Footer/>
       </Router>
     </LenisProvider>
+
+    // <ComingSoon/>
+
   )
 }
 

@@ -116,3 +116,14 @@ input:focus {
     padding: 0px 20px !important;
   }
 }
+
+.main-coming-soon-section {
+  background: url("./assets/images/coming-soon-bg.png");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -2,13 +2,14 @@ import React from 'react';
 import './Footer.scss';
 import FooterLogo from '../../assets/images/footer-logo.svg';
 import homePageData from '../../components/Home/HomePageData';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 
 
 const Footer = () => {
 
   const location = useLocation();
+  const navigate = useNavigate()
 
 
   return (
@@ -20,11 +21,21 @@ const Footer = () => {
               <div className="inner-news-letter-content-input-sec">
                 <div className="news-letter-head">
                   <h2>Stay Connected With Us</h2>
-                  <p>Sign up or reach out anytime—we’re here to <br /> keep your smile healthy</p>
+                  <p>Reach out anytime—we’re here to <br /> keep your smile healthy</p>
                 </div>
-                <div className="email-input-section-news relative">
-                  <input type="email" name="" placeholder='Email address' id="" />
-                  <button type="button">Contact Us</button>
+                <div className="email-input-section-news relative w-fit mx-auto bg-white rounded-lg pl-5 py-3 pr-3">
+                  {/* <input type="email" name="" placeholder='Email address' id="" />
+                  <button type="button">Contact Us</button> */}
+                  <div className="social-media-sec flex items-center gap-5 flex-wrap">
+                      {homePageData.SocialMediaNewsLetter.map((item , index) => {
+                        return (
+                          <div className="single-social-media-icon" key={index}>
+                            <img src={item.img} alt="" />
+                          </div>
+                        )
+                      })}
+                      <button type="button" onClick={() => navigate('/contact')}>Contact Us</button>
+                  </div>                  
                 </div>
               </div>
             </div>
@@ -50,50 +61,50 @@ const Footer = () => {
                 </div>
                 <div className="col-span-8 footer-menu-sec">
                   <div className="footer-menu-grid-sec grid grid-cols-12">
-                        <div className="single-footer-nav-menu col-span-4">
-                          <h4>Quick Links</h4>
-                          <div className="single-links-nav">
-                            <nav>
-                              <ul>
-                                <li><NavLink to={'/'}>Home</NavLink></li>
-                                <li><NavLink to={'/about'}>About Us</NavLink></li>
-                                <li><NavLink to={'/services'}>Services</NavLink></li>
-                                <li><NavLink to={'/blog'}>Blog</NavLink></li>
-                                <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
-                              </ul>
-                            </nav>
-                          </div>
+                      <div className="single-footer-nav-menu col-span-4">
+                        <h4>Quick Links</h4>
+                        <div className="single-links-nav">
+                          <nav>
+                            <ul>
+                              <li><NavLink to={'/'}>Home</NavLink></li>
+                              <li><NavLink to={'/about'}>About Us</NavLink></li>
+                              <li><NavLink to={'/services'}>Services</NavLink></li>
+                              <li><NavLink to={'/blog'}>Blog</NavLink></li>
+                              <li><NavLink to={'/contact'}>Contact Us</NavLink></li>
+                            </ul>
+                          </nav>
                         </div>
-                        <div className="single-footer-nav-menu col-span-4">
-                          <h4>Legal</h4>
-                          <div className="single-links-nav">
-                            <nav>
-                              <ul>
-                                <li>
-                                  <NavLink>Terms & Conditions</NavLink>
-                                </li>
-                                <li>
-                                  <NavLink>Privacy Policy</NavLink>
-                                </li>
-                                <li>
-                                  <NavLink>Help Center</NavLink>
-                                </li>
-                              </ul>
-                            </nav>
-                          </div>
+                      </div>
+                      <div className="single-footer-nav-menu col-span-4">
+                        <h4>Legal</h4>
+                        <div className="single-links-nav">
+                          <nav>
+                            <ul>
+                              <li>
+                                <NavLink>Terms & Conditions</NavLink>
+                              </li>
+                              <li>
+                                <NavLink>Privacy Policy</NavLink>
+                              </li>
+                              <li>
+                                <NavLink>Help Center</NavLink>
+                              </li>
+                            </ul>
+                          </nav>
                         </div>
-                        <div className="single-footer-nav-menu col-span-4">
-                          <h4>Contact</h4>
-                          <div className="single-links-nav">
-                            <nav>
-                              <ul>
-                                <li><a href="">1372 N McDowell Blvd B1, Petaluma, CA 94954, USA</a></li>
-                                <li><a href="tel:+17077789993" className='mobile-number'><i class="bi bi-telephone-fill"></i>+1 (707) 778-9993</a></li>
-                                <li><a href="mailto:info@lalithadental.com" className='mobile-number'><i class="bi bi-envelope-at-fill"></i>info@lalithadental.com</a></li>
-                              </ul>
-                            </nav>
-                          </div>
+                      </div>
+                      <div className="single-footer-nav-menu col-span-4">
+                        <h4>Contact</h4>
+                        <div className="single-links-nav">
+                          <nav>
+                            <ul>
+                              <li><a href="">1372 N McDowell Blvd B1, Petaluma, CA 94954</a></li>
+                              <li><a href='tel:+17077789993' className='mobile-number'><i class="bi bi-telephone-fill"></i>707 778-9993</a></li>
+                              <li><a href="mailto:info@lalithadental.com" className='mobile-number'><i class="bi bi-envelope-at-fill"></i>info@lalithadental.com</a></li>
+                            </ul>
+                          </nav>
                         </div>
+                      </div>
                   </div>
                 </div>
             </div>

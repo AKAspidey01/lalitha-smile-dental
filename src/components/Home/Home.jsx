@@ -14,12 +14,15 @@ import TimingIcon from '../../assets/images/clinic-timings-icon.svg';
 import PricingCarousel from './PricingCarousel';
 import GalleryCarousel from './GalleryCarousel';
 import { useNavigate } from 'react-router-dom';
+import useApiStore from '../../store/apiStore';
 
 
 
 
 
 const Home = () => {
+
+    const { submitContactForm , loading, successMessage, errorMessage, resetStatus } = useApiStore()
 
     const [openIndex, setOpenIndex] = useState(null);
     const contentRefs = useRef([]);
@@ -54,17 +57,31 @@ const Home = () => {
         { value: '1PM-2PM', label: '1PM - 2PM' },
     ];
     const contactFormValues = {
-        email: "",
-        number: "",
         userName: "",
-        date: "",
+        mobileNumber: "",
+        email: "",    
         time: "",
-        seats: "",
+        message: "",
     }
 
-    const handleContactForm = (data) => {
-        console.log( "data" , data)
-    }
+    const handleContactForm = async (values) => {
+
+        console.log(values)
+        resetStatus(); 
+        await submitContactForm(values); 
+    };
+
+
+    function numbersOnly(e) {
+      var key = e.key;
+      var regex = /[0-9]|\./;
+      if (!regex.test(key)) {
+        e.preventDefault();
+    } else {
+        // console.log("You pressed a key: " + key);
+      }
+  }
+
 
   return (
     <div className='home-main-section'>
@@ -73,10 +90,10 @@ const Home = () => {
                 <div className="container">
                     <div className="inner-home-sec-1-content">
                         <h1>Creating Beautiful Smiles <br /> with Personal Touch</h1>
-                        <p>Our dedicated team of professionals is committed to delivering <br /> personalized, high-quality dental care in a comfortable and friendly environment.</p>
+                        {/* <p>Our dedicated team of professionals is committed to delivering <br /> personalized, high-quality dental care in a comfortable and friendly environment.</p> */}
                         <div className="banner-buttons-section flex items-center gap-x-7 flex-wrap gap-y-6">
                             <button type="button" className='appointment-btn bg-primary' onClick={handleScrollToSection}>Get Appointment</button>
-                            <button type="button" className='number-btn bg-white flex items-center gap-x-3' onClick={() => window.location.href = 'tel:+12125551234'}><i class="bi bi-telephone-fill"></i> +1 (212) 555-1234</button>
+                            <button type="button" className='number-btn bg-white flex items-center gap-x-3' onClick={() => window.location.href='tel:+17077789993'}><i class="bi bi-telephone-fill"></i>707 778-9993</button>
                         </div>
                     </div>
                 </div>
@@ -101,7 +118,7 @@ const Home = () => {
                                         {/* <p>She received her BDS degree in India and her Doctor of Dental Surgery degree from Dental Board of California in 2004. Dr. Achyuta and her talented team of experts have a compassionate and meticulous standard of care, focusing on creating a comfortable and enjoyable environment. To that end, their goal is to foster a long-term, conscientious, and supportive relationship with patients.</p> */}
                                     </div>
                                     <div className="signature-knowmore-section flex items-end justify-between flex-wrap gap-y-6">
-                                        <div className="left-signature">
+                                        <div className="left-signature hidden">
                                             <p>Achyuta</p>
                                             <p className='dr-name text-Black'>DR. ACHYUTA</p>
                                             <p className="role-sec">FOUNDER LALITHA SMILE DENTAL</p>
@@ -228,8 +245,8 @@ const Home = () => {
                                             />                                
                                         </div>
                                         <div className="form-inputsec relative similar-inputs-2-cols col-span-6">
-                                            <Field type="number" name="number" placeholder='Mobile Number'
-                                                className={`outline-none border focus:border-primary duration-300  ${errors.number && touched.number ? 'border-red-500 border-opacity-100 bg-red-500 bg-opacity-10 placeholder:text-red-500 text-red-500' : 'text-Black border-transparent placeholder:text-Black'}`} 
+                                            <Field type="tel" name="mobileNumber" placeholder='Mobile Number' maxLength={10}  onKeyPress={(e) => numbersOnly(e)}
+                                                className={`outline-none border focus:border-primary duration-300  ${errors.mobileNumber && touched.mobileNumber ? 'border-red-500 border-opacity-100 bg-red-500 bg-opacity-10 placeholder:text-red-500 text-red-500' : 'text-Black border-transparent placeholder:text-Black'}`} 
                                             />                                
                                         </div>
                                         <div className="form-inputsec relative col-span-12">
@@ -262,13 +279,11 @@ const Home = () => {
                                             />                              
                                         </div>
                                         <div className="form-inputsec relative col-span-12">
-                                            <textarea type="number" name="seats" placeholder='Special Requests'
-                                                className={`outline-none focus:border-secondary duration-300 `} 
-                                            />                                
-                                        </div>
+                                            <Field as="textarea" placeholder='Additional notes' name="message" className={`outline-none focus:border-secondary duration-300 `} />                              
+                                        </div>  
 
                                         <div className="bottom-form-submitter  overflow-hidden relative group col-span-4">
-                                            <button type='submit' onClick={handleSubmit} className='bg-primary'>
+                                            <button type='submit' className='bg-primary'>
                                                 <i class="bi bi-send-fill"></i>
                                                 Send
                                             </button>
@@ -278,6 +293,8 @@ const Home = () => {
                                 )}
                             </Formik>
                         </div>
+
+                        
                     </div>
                     <div className="address-number-timings-grid grid grid-cols-12 gap-5">
                         <div className="col-span-4 similar-sec-7-timings-cols">
@@ -287,7 +304,7 @@ const Home = () => {
                                     <h4>Contact Us</h4>
                                 </div>
                                 <div className="contact-links flex flex-col">
-                                    <a href='tel:+1212555-1234' className='number-anchor mb-1'>+1 (707) 778-9993</a>
+                                    <a href='tel:+17077789993'  aria-label="Call us at 707 778 9993" className='number-anchor mb-1'>707 778-9993</a>
                                     <a href='mailto:info@lalithadental.com' className='number-anchor'>info@lalithadental.com</a>
                                 </div>
                            </div>
@@ -298,7 +315,7 @@ const Home = () => {
                                     <div className="left-sec-7-icon"><img src={VisitIcon} alt="" /></div>
                                     <h4>Visit Us</h4>
                                 </div>
-                                <p>1372 N McDowell Blvd B1, Petaluma, CA 94954, USA</p>
+                                <p>1372 N McDowell Blvd Suite B1, <br /> Petaluma, CA 94954</p>
                            </div>
                         </div>
                         <div className="col-span-4 similar-sec-7-timings-cols">
@@ -351,7 +368,7 @@ const Home = () => {
                     <div className="block-content-section">
                         <div className="heading-slider-buttons-sec flex items-center justify-between">
                             <h2>Exclusive Patient  <span> Savings</span></h2>
-                            <div className="slider-buttons">
+                            <div className="slider-buttons slider-hidden-buttons">
                                 <button type="button" className='prev-slider pricing-button-prev bg-white'><i class="bi bi-chevron-left"></i></button>
                                 <button type="button" className='next-slider pricing-button-next bg-white'><i class="bi bi-chevron-right"></i></button>
                             </div>

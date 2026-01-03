@@ -25,6 +25,7 @@ import Gallery4 from '../../assets/images/gallery-images/gallery-4.png';
 import Insta from '../../assets/images/insta.svg';
 import Face from '../../assets/images/face-book.svg';
 import Twitter from '../../assets/images/twitter.svg';
+import TwitterBlack from '../../assets/images/twitter-black.svg';
 import Linked from '../../assets/images/linked-in.svg';
 
 
@@ -1030,14 +1031,14 @@ const FinancingList = [
         title: 'CareCredit®', 
         content: 'CareCredit® allows you to pay for dental treatments with flexible monthly payment plans. It’s a convenient option for procedures not fully covered by insurance.' 
     },
-    { 
-        title: 'GreenSky®', 
-        content: 'With GreenSky®, you can finance your dental care through simple, low-interest payment plans. It’s designed to fit your budget and make care more accessible.' 
-    },
-    { 
-        title: 'Proceed Finance', 
-        content: 'Proceed Finance offers longer-term financing with affordable payments for larger treatment plans. It helps make advanced dental care achievable without financial stress.'
-    }
+    // { 
+    //     title: 'GreenSky®', 
+    //     content: 'With GreenSky®, you can finance your dental care through simple, low-interest payment plans. It’s designed to fit your budget and make care more accessible.' 
+    // },
+    // { 
+    //     title: 'Proceed Finance', 
+    //     content: 'Proceed Finance offers longer-term financing with affordable payments for larger treatment plans. It helps make advanced dental care achievable without financial stress.'
+    // }
 ];
 
 
@@ -1073,87 +1074,15 @@ const PricingList = [
         listOfContent: [
             {
                 img: PriceCheck,
-                text: '4 Gum Care Visits ($700 Value)'
+                text: '4 Gum Care Visits'
             },
+            // {
+            //     img: PriceCheck,
+            //     text: 'Laser gum therapy'
+            // },
             {
                 img: PriceCheck,
-                text: 'Laser gum therapy – $400 Value'
-            },
-            {
-                img: PriceCheck,
-                text: '20% Off Dental Treatments'
-            },
-            {
-                img: PriceCheck,
-                text: '1 Emergency Visit per Year – Free'
-            },
-            {
-                img: PriceCheck,
-                text: 'Member Whitening Pricing'
-            },
-            {
-                img: PriceCheck,
-                text: 'Priority Scheduling for Members'
-            },
-            {
-                img: PriceCross,
-                text: 'Discount does not apply to specialty services such as veneers, bonding, orthodontics, implants.'
-            },
-
-        ]
-    },
-    {
-        tile: 'Bright Smile Plan',
-        price: '$350',
-        tageLine: 'Over $850 in value for only $350 per year!',
-        listOfContent: [
-            {
-                img: PriceCheck,
-                text: '2 Cleaning + exams & X-rays ($350 Value)'
-            },
-            {
-                img: PriceCheck,
-                text: '20% Off Fillings, Crowns, Root Canals'
-            },
-            {
-                img: PriceCheck,
-                text: '1 Emergency Visit per Year – Free'
-            },
-            {
-                img: PriceCheck,
-                text: 'Priority Scheduling'
-            },
-            {
-                img: PriceCheck,
-                text: 'Fluoride Treatments'
-            },
-            {
-                img: PriceCheck,
-                text: 'Member Whitening Pricing'
-            },
-            {
-                img: PriceCross,
-                text: 'Discount does not apply to specialty services such as veneers, bonding, orthodontics, implants.'
-            },
-
-        ]
-    },
-    {
-        tile: 'Healthy Gums Plan',
-        price: '$700',
-        tageLine: 'Protect your gums and keep them healthy for life.',
-        listOfContent: [
-            {
-                img: PriceCheck,
-                text: '4 Gum Care Visits ($700 Value)'
-            },
-            {
-                img: PriceCheck,
-                text: 'Laser gum therapy – $400 Value'
-            },
-            {
-                img: PriceCheck,
-                text: '20% Off Dental Treatments'
+                text: '15% Off Dental Treatments'
             },
             {
                 img: PriceCheck,
@@ -1177,159 +1106,15 @@ const PricingList = [
     {
         tile: 'Bright Smile Plan',
         price: '$350',
-        tageLine: 'Over $850 in value for only $350 per year!',
+        tageLine: 'Big savings. Brighter smiles. One simple plan',
         listOfContent: [
             {
                 img: PriceCheck,
-                text: '2 Cleaning + exams & X-rays ($350 Value)'
+                text: '2 Cleaning + exams & X-rays'
             },
             {
                 img: PriceCheck,
-                text: '20% Off Fillings, Crowns, Root Canals'
-            },
-            {
-                img: PriceCheck,
-                text: '1 Emergency Visit per Year – Free'
-            },
-            {
-                img: PriceCheck,
-                text: 'Priority Scheduling'
-            },
-            {
-                img: PriceCheck,
-                text: 'Fluoride Treatments'
-            },
-            {
-                img: PriceCheck,
-                text: 'Member Whitening Pricing'
-            },
-            {
-                img: PriceCross,
-                text: 'Discount does not apply to specialty services such as veneers, bonding, orthodontics, implants.'
-            },
-
-        ]
-    },
-    {
-        tile: 'Healthy Gums Plan',
-        price: '$700',
-        tageLine: 'Protect your gums and keep them healthy for life.',
-        listOfContent: [
-            {
-                img: PriceCheck,
-                text: '4 Gum Care Visits ($700 Value)'
-            },
-            {
-                img: PriceCheck,
-                text: 'Laser gum therapy – $400 Value'
-            },
-            {
-                img: PriceCheck,
-                text: '20% Off Dental Treatments'
-            },
-            {
-                img: PriceCheck,
-                text: '1 Emergency Visit per Year – Free'
-            },
-            {
-                img: PriceCheck,
-                text: 'Member Whitening Pricing'
-            },
-            {
-                img: PriceCheck,
-                text: 'Priority Scheduling for Members'
-            },
-            {
-                img: PriceCross,
-                text: 'Discount does not apply to specialty services such as veneers, bonding, orthodontics, implants.'
-            },
-
-        ]
-    },
-    {
-        tile: 'Bright Smile Plan',
-        price: '$350',
-        tageLine: 'Over $850 in value for only $350 per year!',
-        listOfContent: [
-            {
-                img: PriceCheck,
-                text: '2 Cleaning + exams & X-rays ($350 Value)'
-            },
-            {
-                img: PriceCheck,
-                text: '20% Off Fillings, Crowns, Root Canals'
-            },
-            {
-                img: PriceCheck,
-                text: '1 Emergency Visit per Year – Free'
-            },
-            {
-                img: PriceCheck,
-                text: 'Priority Scheduling'
-            },
-            {
-                img: PriceCheck,
-                text: 'Fluoride Treatments'
-            },
-            {
-                img: PriceCheck,
-                text: 'Member Whitening Pricing'
-            },
-            {
-                img: PriceCross,
-                text: 'Discount does not apply to specialty services such as veneers, bonding, orthodontics, implants.'
-            },
-
-        ]
-    },
-    {
-        tile: 'Healthy Gums Plan',
-        price: '$700',
-        tageLine: 'Protect your gums and keep them healthy for life.',
-        listOfContent: [
-            {
-                img: PriceCheck,
-                text: '4 Gum Care Visits ($700 Value)'
-            },
-            {
-                img: PriceCheck,
-                text: 'Laser gum therapy – $400 Value'
-            },
-            {
-                img: PriceCheck,
-                text: '20% Off Dental Treatments'
-            },
-            {
-                img: PriceCheck,
-                text: '1 Emergency Visit per Year – Free'
-            },
-            {
-                img: PriceCheck,
-                text: 'Member Whitening Pricing'
-            },
-            {
-                img: PriceCheck,
-                text: 'Priority Scheduling for Members'
-            },
-            {
-                img: PriceCross,
-                text: 'Discount does not apply to specialty services such as veneers, bonding, orthodontics, implants.'
-            },
-
-        ]
-    },
-    {
-        tile: 'Bright Smile Plan',
-        price: '$350',
-        tageLine: 'Over $850 in value for only $350 per year!',
-        listOfContent: [
-            {
-                img: PriceCheck,
-                text: '2 Cleaning + exams & X-rays ($350 Value)'
-            },
-            {
-                img: PriceCheck,
-                text: '20% Off Fillings, Crowns, Root Canals'
+                text: '15% Off Fillings, Crowns, Root Canals'
             },
             {
                 img: PriceCheck,
@@ -1408,6 +1193,28 @@ const SocialMedia = [
         link: ''
     },
 ]
+const SocialMediaNewsLetter = [
+    {
+        name: 'Instagram',
+        img: Insta,
+        link: ''
+    },
+    {
+        name: 'FaceBook',
+        img: Face,
+        link: ''
+    },
+    {
+        name: 'Twitter',
+        img: TwitterBlack,
+        link: ''
+    },
+    {
+        name: 'Linked In',
+        img: Linked,
+        link: ''
+    },
+]
 
 const homePageData = {
     ServicesData,
@@ -1417,7 +1224,8 @@ const homePageData = {
     Faqs,
     PricingList,
     GalleryList,
-    SocialMedia
+    SocialMedia,
+    SocialMediaNewsLetter
 }
 
 export default homePageData

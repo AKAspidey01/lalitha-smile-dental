@@ -492,6 +492,10 @@
   }
 }
 
+.slider-hidden-buttons {
+  display: none !important;
+}
+
 @media only screen and (max-width: 991.99px) {
   .home-section-1 {
     padding: 170px 0px 110px 0px;
@@ -617,6 +621,15 @@
       br {
         display: none;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing-cols-new-updated-sec {
+    gap: 32px 0px !important;
+    .single-pricing-card-section {
+      grid-column: span 12 / span 12;
     }
   }
 }
