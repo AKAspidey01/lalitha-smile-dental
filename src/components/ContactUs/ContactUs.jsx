@@ -75,7 +75,7 @@ const contactFormValues = {
                         </div>
                         <div className="home-section-7-grid grid grid-cols-12 gap-y-8  bg-white rounded-[20px]">
                             <div className="map-contact-section col-span-6 similar-home-sec-7-cols rounded-l-[20px] overflow-hidden">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.204548001121!2d-122.66597759999999!3d38.274750999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085b4e4b5955555%3A0xb36d58bbd2a82cd!2s1372%20N%20McDowell%20Blvd%20B1%2C%20Petaluma%2C%20CA%2094954%2C%20USA!5e0!3m2!1sen!2sin!4v1757563105947!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3132.208339521335!2d-122.6664168!3d38.2746631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085b4e4b5b0fefd%3A0x16ff8a36b5f788c9!2sLalitha%20Smile%20Dental%20Services!5e0!3m2!1sen!2sin!4v1767623016463!5m2!1sen!2sin" width="100%" height="100%" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                             <div className="contact-form-section col-span-6 p-7 similar-home-sec-7-cols">
                                 <Formik
@@ -172,8 +172,8 @@ const contactFormValues = {
                                     <div>
                                         <p>Monday - Friday : </p>
                                         <div className="timings-text mt-1.5">
-                                            <h5>08:30AM to 12:30PM</h5>
-                                            <h5>01:30AM to 05:30PM</h5>
+                                            <h5>08:30AM - 12:30PM</h5>
+                                            <h5>01:30AM - 05:30PM</h5>
                                         </div>
                                     </div>
                                 </div>

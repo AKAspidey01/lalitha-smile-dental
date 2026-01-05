@@ -56,12 +56,18 @@ const SingleServicePage = () => {
                                 {item?.sub == true ? 
                                     <div className="sub-services-section">
                                         <h3 className='mb-3'>Our {item?.title} Services</h3>
-                                        <div className="all-sub-service-collab flex flex-col gap-y-5">
+                                        <div className="all-sub-service-collab grid grid-cols-12 gap-5">
                                             {item?.singleServiceData?.subServicesContent?.map((subItem , subIndex) => {
+                                                console.log(subItem)
                                                 return (
-                                                    <div className="single-sub-service-sec" key={subIndex}>
-                                                        <h5>{subItem?.subserviceHead}</h5>
-                                                        <p>{subItem?.subServicePara}</p>
+                                                    <div className="single-sub-service-sec col-span-4 bg-fff border border-black/25 rounded-[15px] overflow-hidden" key={subIndex}>
+                                                        <div className="top-image-sec bg-white">
+                                                            <img src={subItem?.subServiceImg ? subItem?.subServiceImg :  item?.singleServiceData?.serviceImg} alt="" />
+                                                        </div>
+                                                        <div className="single-sub-serv-card-content p-6">
+                                                            <h5>{subItem?.subserviceHead}</h5>
+                                                            <p className=''>{subItem?.subServicePara}</p>
+                                                        </div>
                                                     </div>
                                                 )
                                             })}

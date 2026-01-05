@@ -70,6 +70,12 @@ import FillersImg from '../../assets/images/services-images/fillers.png';
 import TeethWhiteImg from '../../assets/images/services-images/teeth-whitening.png';
 
 
+// Sub Service Images
+import DentalExamAdult from '../../assets/images/services-images/subservices/dental-exams-adults.png';
+import DentalExamKid from '../../assets/images/services-images/subservices/dental-exams-kids.png';
+
+
+
 
 
 
@@ -96,10 +102,12 @@ const ServicesData = [
             ],
             subServicesContent: [
                 {
+                    subServiceImg: DentalExamAdult,
                     subserviceHead: "1. Adults",
                     subServicePara: "Adult dental exams focus on preventive and restorative care to maintain overall oral health. Your dentist checks for tooth decay, gum disease, and signs of oral cancer, and provides personalized guidance to maintain strong teeth and gums. Regular visits help prevent costly treatments and ensure long-term dental wellness."
                 },
                 {
+                    subServiceImg: DentalExamKid,
                     subserviceHead: "2. Kids",
                     subServicePara: "Pediatric dental exams help children develop good oral hygiene habits early on. Dentists gently examine growing teeth, check alignment, and provide fluoride treatments or sealants when needed. These visits make dentistry a positive experience for kids and help protect their developing smiles."
                 }
